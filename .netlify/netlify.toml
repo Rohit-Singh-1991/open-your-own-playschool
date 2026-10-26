@@ -1,0 +1,39 @@
+headersOrigin = "config"
+plugins = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/mohit/Library/Application Support/Claude/scratch-workspaces/1e6192b7-890e-4349-909d-6461b55c57f7/69052c4d-4ecd-4a28-b3e0-5a87f17ec39c/scratch-2026-10-25-d5f5ee/website"
+publishOrigin = "config"
+commandOrigin = "ui"
+command = "hugo"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/assets/*"
+
+[headers.values]
+Cache-Control = "public, max-age=604800"
+
+[[headers]]
+for = "/*.pdf"
+
+[headers.values]
+Content-Disposition = "attachment"

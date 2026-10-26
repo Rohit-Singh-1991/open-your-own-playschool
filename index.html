@@ -1,0 +1,1437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dream Spire School Franchise</title>
+<meta name="description" content="Open your own preschool with Dream Spire School. Three franchise models from ₹50,000, no royalty and a 3-year partnership, backed by two running campuses in Palam, New Delhi.">
+<meta name="theme-color" content="#17304A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dream Spire School Franchise: Build Your Own Preschool">
+<meta property="og:description" content="Three franchise models from ₹50,000. No royalty. Brand, academics, training and launch support.">
+<meta property="og:image" content="https://dream-spire-franchise.netlify.app/assets/og-image.jpg">
+<meta property="og:url" content="https://dream-spire-franchise.netlify.app/">
+<link rel="canonical" href="https://dream-spire-franchise.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Kalam:wght@400;700&family=Nunito+Sans:wght@400;600;700;800;900&display=swap">
+<style>
+/* Layout: a school notebook page. Ruled hero with a red margin line, polaroid photos taped on,
+   then alternating sky / sunshine bands. Models are colour-coded: 1 = brick, 2 = ink, 3 = sunshine. */
+:root{
+  --ink:#17304A; --ink-2:#22466B; --ink-3:#0E2135;
+  --brick:#A3271A; --brick-2:#C43D2B; --brick-tint:#FBECE8;
+  --sun:#F4B425; --sun-deep:#B87D05; --suntint:#FFF4D6;
+  --turf:#2F8A4C; --turf-tint:#E4F3E8;
+  --sky:#EAF3FB; --sky-2:#D6E8F7; --sky-blue:#4C9BD9;
+  --paper:#FFFDF9; --white:#FFFFFF;
+  --text:#1E2E40; --muted:#56687C; --line:#DCE5EE;
+  --rule-blue:rgba(110,163,214,.55); --rule-red:rgba(226,112,98,.75);
+  --on-dark:#F4F8FC; --on-dark-muted:#B9CBDD;
+  --wa:#168A45;
+
+  --f-display:"Baloo 2","Arial Rounded MT Bold","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Nunito Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-hand:"Kalam","Bradley Hand","Comic Sans MS",cursive;
+
+  --t-xs:.8rem; --t-sm:.92rem; --t-md:1.06rem; --t-lg:1.25rem;
+  --t-xl:clamp(1.45rem,2.4vw,1.8rem);
+  --t-2xl:clamp(2.1rem,4.6vw,3.4rem);
+  --t-hero:clamp(3rem,8.4vw,6.6rem);
+
+  --r-sm:10px; --r-md:18px; --r-lg:28px;
+  --shadow:0 1px 2px rgba(23,48,74,.07),0 14px 34px -16px rgba(23,48,74,.28);
+  --shadow-lg:0 2px 4px rgba(23,48,74,.08),0 26px 50px -22px rgba(23,48,74,.38);
+  --ease:cubic-bezier(.2,.75,.2,1);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--white)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--f-display);color:var(--ink);margin:0;line-height:1.05;text-wrap:balance}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+section,header{scroll-margin-top:76px}
+
+.wrap{max-width:1200px;margin-inline:auto;padding-left:max(clamp(16px,4vw,40px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,40px),env(safe-area-inset-right,0px))}
+.band{padding-block:clamp(64px,9vw,120px)}
+.eyebrow{font-weight:900;font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--brick);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:14px;flex:none;background:
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 0/100% 1.5px no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 33.3%/100% 1.5px no-repeat,
+  linear-gradient(var(--rule-red),var(--rule-red)) 0 66.6%/100% 1.5px no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 100%/100% 1.5px no-repeat}
+.h2{font-size:var(--t-2xl);font-weight:800;letter-spacing:-.01em}
+.lede{font-size:var(--t-lg);color:var(--muted);max-width:62ch;line-height:1.55}
+.hand{font-family:var(--f-hand);font-weight:700}
+.section-head{display:grid;gap:16px;margin-bottom:clamp(32px,5vw,56px);max-width:780px}
+.section-head.center{margin-inline:auto;text-align:center;justify-items:center}
+
+/* four-line copybook strip */
+.fourline{height:22px;width:120px;background:
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 0/100% 2px no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 33.3%/100% 2px no-repeat,
+  linear-gradient(var(--rule-red),var(--rule-red)) 0 66.6%/100% 2px no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 100%/100% 2px no-repeat}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-body);font-weight:800;font-size:var(--t-md);text-decoration:none;border-radius:999px;padding:14px 24px;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .25s}
+.btn svg{width:20px;height:20px;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover svg{transform:translateX(3px)}
+.btn-primary{background:var(--brick);color:var(--white);box-shadow:0 10px 24px -10px rgba(163,39,26,.7)}
+.btn-primary:hover{background:var(--brick-2)}
+.btn-ghost{background:var(--white);color:var(--ink);border-color:var(--ink)}
+.btn-sun{background:var(--sun);color:var(--ink-3)}
+.btn-small{padding:9px 18px;font-size:var(--t-sm)}
+
+/* icons */
+.ico{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.topbar-in{display:flex;align-items:center;gap:24px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--f-display);font-weight:800;font-size:1.2rem;line-height:1}
+.brand img{width:38px;height:auto}
+.brand small{display:block;font-family:var(--f-body);font-weight:800;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brick);margin-top:3px}
+.navlinks{display:flex;gap:4px;margin-left:auto}
+.navlinks a{text-decoration:none;font-weight:700;font-size:var(--t-sm);color:var(--muted);padding:8px 12px;border-radius:999px;transition:color .2s,background-color .2s}
+.navlinks a:hover{color:var(--ink);background:var(--sky)}
+.navlinks a.on{color:var(--ink);background:var(--sky-2)}
+.topbar .btn{margin-left:8px}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:transparent}
+.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--brick),var(--sun));transform-origin:left;transform:scaleX(0)}
+@media (max-width:1060px){.navlinks{display:none}.topbar .btn{margin-left:auto}}
+
+/* ---------- hero ---------- */
+.hero{--margin:clamp(6px,4.5vw - 10px,64px);position:relative;overflow:hidden;background-color:var(--paper);background-image:
+  linear-gradient(90deg,transparent calc(var(--margin) - 1px),var(--rule-red) calc(var(--margin) - 1px) calc(var(--margin) + 1px),transparent calc(var(--margin) + 1px)),
+  repeating-linear-gradient(180deg,transparent 0 37px,rgba(110,163,214,.22) 37px 38px);
+  padding-block:clamp(40px,6vw,84px) clamp(56px,7vw,96px)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,5vw,64px);align-items:center}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero-title{position:relative;z-index:0;font-size:var(--t-hero);font-weight:800;letter-spacing:-.015em;line-height:.98}
+.hero-title .ht-1{display:block;font-size:.62em;color:var(--ink)}
+.hero-title .ht-2{display:block;color:var(--brick)}
+.ruled-word{position:relative;display:inline-block;padding-right:.08em}
+.ruled-word::before{content:"";position:absolute;z-index:-1;left:-.12em;right:-.5em;top:.1em;height:.84em;transform-origin:left;background:
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 0/100% .035em no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 .16em/100% .035em no-repeat,
+  linear-gradient(var(--rule-red),var(--rule-red)) 0 .645em/100% .045em no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 100%/100% .035em no-repeat}
+.hero-tag{font-family:var(--f-hand);font-weight:700;font-size:clamp(1.25rem,2.2vw,1.6rem);color:var(--ink-2);line-height:1.3}
+.hero-lede{font-size:var(--t-lg);color:var(--muted);max-width:52ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips li{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:7px 14px 7px 10px;font-weight:800;font-size:var(--t-sm);color:var(--ink)}
+.chips li svg{width:18px;height:18px;color:var(--sun-deep)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+
+.hero-art{position:relative;aspect-ratio:1/.95;max-width:100%;min-width:0}
+.rainbow{position:absolute;right:-6%;top:-4%;width:62%;overflow:visible}
+.rainbow path{fill:none;stroke-width:16;stroke-linecap:round}
+.polaroid{position:absolute;margin:0;background:var(--white);padding:10px 10px 38px;border-radius:6px;box-shadow:var(--shadow-lg);transform:rotate(var(--rot))}
+.polaroid img{width:100%;aspect-ratio:var(--ar);object-fit:cover;border-radius:3px;background:var(--sky)}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:7px;text-align:center;font-family:var(--f-hand);font-weight:700;font-size:1.02rem;color:var(--ink)}
+.polaroid::before{content:"";position:absolute;top:-12px;left:50%;width:86px;height:24px;transform:translateX(-50%) rotate(-5deg);background:rgba(244,180,37,.6);border-radius:2px;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.p1{--rot:-3deg;--ar:16/10;left:9%;top:7%;width:80%;z-index:2}
+.p2{--rot:5deg;--ar:4/3;left:0;bottom:3%;width:45%;z-index:3}
+.p3{--rot:-6deg;--ar:3/4;right:1%;bottom:0;width:31%;z-index:4}
+.sticker{position:absolute;z-index:5;right:-1%;top:-3%;width:clamp(96px,11vw,132px);aspect-ratio:1;display:grid;place-items:center;text-align:center;font-family:var(--f-display);font-weight:800;font-size:clamp(1rem,1.5vw,1.25rem);line-height:.95;color:var(--ink-3);background:var(--sun);transform:rotate(12deg);
+  clip-path:polygon(50% 0%,59% 9%,71% 4%,75% 16%,88% 15%,86% 28%,97% 33%,91% 45%,100% 54%,90% 62%,94% 75%,82% 78%,80% 91%,68% 89%,60% 99%,50% 92%,40% 99%,32% 89%,20% 91%,18% 78%,6% 75%,10% 62%,0% 54%,9% 45%,3% 33%,14% 28%,12% 15%,25% 16%,29% 4%,41% 9%)}
+.sticker span{display:block;font-size:.6em;font-family:var(--f-body);font-weight:900;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+.scribble{position:absolute;z-index:5;left:-2%;top:-5%;font-family:var(--f-hand);font-weight:700;color:var(--brick);font-size:clamp(1rem,1.5vw,1.15rem);transform:rotate(-6deg);display:flex;align-items:flex-start;gap:4px;line-height:1.1}
+.scribble svg{width:42px;height:42px;margin-top:8px;stroke:var(--brick);fill:none;stroke-width:2;stroke-linecap:round}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:560px;width:100%;margin:12px auto 0}
+}
+
+/* hero load sequence */
+@media (prefers-reduced-motion:no-preference){
+  .hero .ht-1,.hero .ht-2,.hero-tag,.hero-lede,.hero .chips,.hero .cta-row,.hero .eyebrow{animation:rise .9s var(--ease) backwards}
+  .hero .eyebrow{animation-delay:.05s}.hero .ht-1{animation-delay:.12s}.hero .ht-2{animation-delay:.24s}
+  .hero-tag{animation-delay:.5s}.hero-lede{animation-delay:.6s}.hero .chips{animation-delay:.7s}.hero .cta-row{animation-delay:.8s}
+  .ruled-word::before{animation:drawx 1.1s .45s cubic-bezier(.6,.1,.2,1) backwards}
+  .polaroid{animation:drop 1s var(--ease) backwards}
+  .p1{animation-delay:.3s}.p2{animation-delay:.55s}.p3{animation-delay:.75s}
+  .rainbow path{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 1.4s var(--ease) backwards}
+  .rainbow path:nth-child(2){animation-delay:.12s}.rainbow path:nth-child(3){animation-delay:.24s}.rainbow path:nth-child(4){animation-delay:.36s}
+  .sticker{animation:pop .8s 1.1s cubic-bezier(.3,1.6,.5,1) backwards}
+  .scribble{animation:fadein .8s 1.4s ease backwards}
+}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes drawx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes drop{from{opacity:0;transform:translateY(-36px) rotate(calc(var(--rot) * -2)) scale(1.05)}to{opacity:1;transform:rotate(var(--rot))}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes pop{0%{transform:scale(0) rotate(-60deg)}100%{transform:scale(1) rotate(12deg)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+
+/* scroll reveal: elements rest visible; the animation starts only when they touch the viewport */
+@media (prefers-reduced-motion:no-preference){
+  .rv.play{animation:rise .85s var(--ease) var(--d,0s) backwards}
+  .rv-pop.play{animation:popin .7s cubic-bezier(.3,1.5,.5,1) var(--d,0s) backwards}
+  .rv-left.play{animation:fromleft .85s var(--ease) var(--d,0s) backwards}
+}
+@keyframes popin{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes fromleft{from{opacity:0;transform:translateX(-30px)}to{opacity:1;transform:none}}
+
+/* ---------- ticker ---------- */
+.ticker{background:var(--ink);color:var(--on-dark);overflow:hidden;padding-block:16px;border-block:4px solid var(--sun)}
+.ticker-track{display:flex;width:max-content;gap:0;animation:slide 38s linear infinite}
+.ticker-track span{display:inline-flex;align-items:center;gap:22px;padding-right:22px;font-family:var(--f-display);font-weight:700;font-size:1.25rem;white-space:nowrap}
+.ticker-track svg{width:18px;height:18px;fill:var(--sun);stroke:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.ticker-track [aria-hidden]{display:none}}
+
+/* ---------- why ---------- */
+.why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,72px);align-items:start}
+.why-copy{display:grid;gap:20px;min-width:0}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:10px}
+.stat{background:var(--white);border:1.5px solid var(--line);border-radius:var(--r-md);padding:20px 20px 18px;display:grid;gap:4px;align-content:start}
+.stat .num{font-family:var(--f-display);font-weight:800;font-size:clamp(2.4rem,4.6vw,3.3rem);line-height:1;color:var(--brick);font-variant-numeric:tabular-nums}
+.stat .num small{font-size:.45em;margin-left:4px;color:var(--ink)}
+.stat p{font-weight:700;color:var(--ink);line-height:1.35}
+.stat p span{display:block;font-weight:600;color:var(--muted);font-size:var(--t-sm)}
+.why-photo{position:relative;margin:0}
+.why-photo img{border-radius:var(--r-lg);aspect-ratio:4/5;object-fit:cover;width:100%;box-shadow:var(--shadow-lg)}
+.why-photo figcaption{position:absolute;left:-14px;bottom:28px;background:var(--sun);color:var(--ink-3);font-family:var(--f-hand);font-weight:700;font-size:1.15rem;padding:8px 16px;border-radius:8px;transform:rotate(-3deg);box-shadow:var(--shadow)}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:clamp(48px,6vw,80px)}
+.pillar{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:start;padding:22px;border-radius:var(--r-md);background:var(--sky)}
+.pillar .ic{grid-row:span 2;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--white);color:var(--ink)}
+.pillar h3{font-size:1.3rem;font-weight:800}
+.pillar p{color:var(--muted);font-size:var(--t-sm);line-height:1.5}
+.pillars-note{margin-top:16px;color:var(--muted);font-size:var(--t-sm)}
+@media (max-width:900px){.why-grid{grid-template-columns:1fr}.why-photo{max-width:520px}.pillars{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.pillars{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.stat{padding:16px}}
+
+/* ---------- gallery ---------- */
+.gallery-band{background:var(--sky)}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,17vw,210px);gap:14px}
+.tile{position:relative;margin:0;overflow:hidden;border-radius:var(--r-md);background:var(--sky-2);box-shadow:var(--shadow)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.tile:hover img{transform:scale(1.06)}
+.tile figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.95);color:var(--ink);font-weight:800;font-size:var(--t-sm);padding:6px 12px;border-radius:999px}
+.t1{grid-column:1/3;grid-row:1/3}.t2{grid-column:3;grid-row:1/3}.t3{grid-column:4;grid-row:1}.t4{grid-column:4;grid-row:2}.t5{grid-column:1/3;grid-row:3}.t6{grid-column:3/5;grid-row:3}
+.t2 img{object-position:50% 20%}
+@media (max-width:700px){.bento{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.t1{grid-column:1/3;grid-row:auto/span 2}.t2{grid-column:1;grid-row:auto/span 2}.t3,.t4{grid-column:2;grid-row:auto}.t5,.t6{grid-column:1/3;grid-row:auto}}
+
+/* ---------- model overview ---------- */
+.models-band{background:var(--paper)}
+.mcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.mcard{--c:var(--brick);--c-tint:var(--brick-tint);--c-on:var(--white);position:relative;display:flex;flex-direction:column;background:var(--white);border:1.5px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.mcard:hover{transform:translateY(-8px) rotate(-.4deg);box-shadow:var(--shadow-lg)}
+.mcard.m2{--c:var(--ink);--c-tint:var(--sky);--c-on:var(--white)}
+.mcard.m3{--c:var(--sun);--c-tint:var(--suntint);--c-on:var(--ink-3)}
+.mcard-top{background:var(--c);color:var(--c-on);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.mcard-top .lbl{font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:var(--t-xs)}
+.mcard-top .tag{font-family:var(--f-hand);font-weight:700;font-size:1.05rem;transform:rotate(-3deg);white-space:nowrap}
+.mcard-body{padding:24px;display:flex;flex-direction:column;gap:14px;flex:1}
+.mcard h3{font-size:1.7rem;font-weight:800}
+.price{font-family:var(--f-display);font-weight:800;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.mcard .price{font-size:clamp(2.2rem,3.4vw,2.8rem)}
+.price-note{font-size:var(--t-sm);font-weight:700;color:var(--muted);margin-top:-6px}
+.mcard .pitch{font-weight:800;color:var(--ink);font-size:var(--t-md);padding:10px 14px;background:var(--c-tint);border-radius:var(--r-sm)}
+.ticks{display:grid;gap:9px}
+.ticks li{position:relative;padding-left:30px;line-height:1.45}
+.ticks li::before{content:"";position:absolute;left:0;top:.12em;width:20px;height:20px;border-radius:50%;background:var(--turf-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232F8A4C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12.5 4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
+.bestfor{font-size:var(--t-sm);color:var(--muted);border-top:1.5px dashed var(--line);padding-top:14px;margin-top:auto}
+.bestfor b{color:var(--ink)}
+.mcard .btn{align-self:flex-start;margin-top:4px;background:var(--c);color:var(--c-on)}
+@media (min-width:981px){.mcard h3{min-height:2.1em}}
+@media (max-width:980px){.mcards{grid-template-columns:1fr;max-width:620px;margin-inline:auto}}
+
+/* ---------- model detail ---------- */
+.model{--c:var(--brick);--c-tint:var(--brick-tint);--c-on:var(--white)}
+.model.m2{--c:var(--ink);--c-tint:var(--sky);--c-on:var(--white)}
+.model.m3{--c:var(--sun);--c-tint:var(--suntint);--c-on:var(--ink-3)}
+.model-hero{background:var(--c-tint);padding-block:clamp(56px,8vw,104px)}
+.model.m2 .model-hero{background:var(--ink);color:var(--on-dark)}
+.model.m2 .model-hero h2,.model.m2 .model-hero .price{color:var(--white)}
+.model.m2 .model-hero .lede,.model.m2 .model-hero .price-note{color:var(--on-dark-muted)}
+.model.m2 .model-hero .best{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);color:var(--on-dark)}
+.model.m2 .model-hero .best b{color:var(--sun)}
+.mh-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);align-items:center}
+.mh-copy{display:grid;gap:18px;min-width:0}
+.badge{display:inline-flex;align-items:center;gap:10px;justify-self:start;background:var(--c);color:var(--c-on);font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:var(--t-xs);padding:8px 16px;border-radius:999px}
+.model.m2 .badge{background:var(--sun);color:var(--ink-3)}
+.badge b{font-family:var(--f-display);font-size:1.3rem;letter-spacing:0;line-height:1}
+.mh-copy .h2{font-size:clamp(2.3rem,5vw,3.8rem)}
+.price-block{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 16px}
+.price-block .price{font-size:clamp(2.8rem,6.4vw,4.6rem);color:var(--c)}
+.model.m3 .price-block .price{color:var(--ink)}
+.model.m3 .price-block .price span{background:linear-gradient(transparent 62%,var(--sun) 62% 92%,transparent 92%)}
+.best{background:var(--white);border:1.5px solid var(--line);border-radius:var(--r-md);padding:14px 18px;font-weight:600;line-height:1.5}
+.best b{display:block;font-size:var(--t-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--c);font-weight:900;margin-bottom:2px}
+.model.m3 .best b{color:var(--sun-deep)}
+.mh-photos{position:relative;aspect-ratio:1/.86;min-width:0}
+.mh-photos img{position:absolute;object-fit:cover;border-radius:var(--r-md);box-shadow:var(--shadow-lg);border:6px solid var(--white)}
+.mh-photos .a{left:0;top:0;width:78%;height:70%}
+.mh-photos .b{right:0;bottom:0;width:56%;height:56%}
+.mh-photos .note{position:absolute;left:4%;bottom:6%;font-family:var(--f-hand);font-weight:700;font-size:1.15rem;color:var(--ink);background:var(--sun);padding:6px 14px;border-radius:8px;transform:rotate(-4deg);box-shadow:var(--shadow)}
+.model.m3 .mh-photos .note{background:var(--white)}
+.highlights{display:flex;flex-wrap:wrap;gap:10px}
+.highlights li{display:inline-flex;align-items:center;gap:10px;font-weight:800;padding:9px 16px 9px 10px;border-radius:999px;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2)}
+.highlights li i{font-style:normal;font-family:var(--f-display);font-weight:800;font-size:1.25rem;line-height:1;background:var(--sun);color:var(--ink-3);border-radius:999px;min-width:34px;height:34px;display:grid;place-items:center;padding-inline:8px}
+@media (max-width:900px){.mh-grid{grid-template-columns:1fr}.mh-photos{max-width:560px;width:100%}}
+
+.incl{padding-block:clamp(56px,8vw,100px)}
+.incl-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.incl-head h3{font-size:var(--t-xl);font-weight:800}
+.incl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.incl-grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.icard{background:var(--white);border:1.5px solid var(--line);border-radius:var(--r-md);padding:24px;display:grid;gap:14px;align-content:start;transition:border-color .25s,transform .3s var(--ease)}
+.icard:hover{border-color:var(--c);transform:translateY(-4px)}
+.icard-h{display:flex;align-items:center;gap:14px}
+.icard-h .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--c-tint);color:var(--c)}
+.model.m3 .icard-h .ic{color:var(--sun-deep)}
+.icard h4{font-size:1.25rem;font-weight:800;line-height:1.15}
+.icard .ticks{font-size:var(--t-sm)}
+@media (max-width:980px){.incl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.incl-grid,.incl-grid.four{grid-template-columns:1fr}}
+
+/* starter kit */
+.kit{margin-top:22px;border-radius:var(--r-lg);background:var(--suntint);padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,48px);align-items:center;position:relative;overflow:hidden}
+.kit::after{content:"";position:absolute;inset:auto 0 0 0;height:22px;opacity:.7;background:
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 0/100% 2px no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 33.3%/100% 2px no-repeat,
+  linear-gradient(var(--rule-red),var(--rule-red)) 0 66.6%/100% 2px no-repeat,
+  linear-gradient(var(--rule-blue),var(--rule-blue)) 0 100%/100% 2px no-repeat}
+.kit-count{display:grid;justify-items:center;text-align:center;gap:2px}
+.kit-count .x{font-family:var(--f-display);font-weight:800;font-size:clamp(3.4rem,7vw,5.2rem);line-height:.9;color:var(--brick)}
+.kit-count .x small{font-size:.5em}
+.kit-count p{font-weight:800;color:var(--ink);line-height:1.2}
+.kit-main{display:grid;gap:18px;min-width:0;padding-bottom:12px}
+.kit-main h4{font-size:var(--t-xl);font-weight:800}
+.kit-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(98px,1fr));gap:12px}
+.kit-items li{background:var(--white);border-radius:14px;padding:14px 8px 12px;display:grid;justify-items:center;gap:6px;text-align:center;font-weight:800;font-size:var(--t-sm);color:var(--ink);line-height:1.2;box-shadow:0 1px 2px rgba(23,48,74,.06)}
+.kit-items li svg{width:34px;height:34px;color:var(--brick);stroke-width:1.6}
+.kit-extra{font-weight:700;color:var(--muted);font-size:var(--t-sm)}
+.kit-extra b{color:var(--ink)}
+@media (max-width:640px){.kit{grid-template-columns:1fr}.kit-count{justify-items:start;text-align:left}}
+
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.panel{border-radius:var(--r-md);padding:26px;display:grid;gap:12px;align-content:start;background:var(--sky)}
+.panel h4{font-size:1.35rem;font-weight:800;display:flex;align-items:center;gap:10px}
+.panel h4 svg{color:var(--brick)}
+.panel p{color:var(--text);line-height:1.6}
+.panel.warn{background:var(--brick-tint)}
+@media (max-width:760px){.panels{grid-template-columns:1fr}}
+
+.arrange{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(20px,4vw,48px);margin-top:22px;border:2px dashed var(--line);border-radius:var(--r-lg);padding:clamp(22px,4vw,36px);align-items:start}
+.arrange h4{font-size:var(--t-xl);font-weight:800}
+.arrange .sub{color:var(--muted);margin-top:8px}
+.dots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px}
+.dots li{position:relative;padding-left:26px;line-height:1.45;font-weight:600}
+.dots li::before{content:"";position:absolute;left:2px;top:.42em;width:12px;height:12px;border-radius:50%;border:2.5px solid var(--muted)}
+.note-line{margin-top:18px;font-weight:700;color:var(--ink);background:var(--turf-tint);border-radius:var(--r-sm);padding:12px 16px}
+@media (max-width:760px){.arrange{grid-template-columns:1fr}.dots{grid-template-columns:1fr}}
+
+/* ---------- compare ---------- */
+.compare-band{background:var(--sky)}
+.table-scroll{overflow-x:auto;border-radius:var(--r-lg);box-shadow:var(--shadow-lg);background:var(--white);-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:780px;font-size:var(--t-md);table-layout:fixed}
+thead th{width:26%}
+thead th.feat{width:22%}
+th,td{padding:16px 20px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+thead th{font-family:var(--f-display);font-weight:800;font-size:1.15rem;line-height:1.15;color:var(--white);background:var(--brick);border-bottom:0}
+thead th small{display:block;font-family:var(--f-body);font-size:var(--t-xs);font-weight:900;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:4px}
+thead th.c2{background:var(--ink)}
+thead th.c3{background:var(--sun);color:var(--ink-3)}
+thead th.feat{background:var(--white);color:var(--ink);font-size:var(--t-md);vertical-align:bottom}
+tbody th{font-weight:800;color:var(--ink);background:var(--white);position:sticky;left:0;z-index:1;min-width:170px}
+tbody tr:nth-child(even) td,tbody tr:nth-child(even) th{background:#F7FAFD}
+tbody tr:hover td,tbody tr:hover th{background:var(--suntint)}
+td.inv{font-family:var(--f-display);font-weight:800;font-size:1.35rem;color:var(--ink);font-variant-numeric:tabular-nums}
+.y,.n,.p{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+.y svg{width:20px;height:20px;color:var(--white);background:var(--turf);border-radius:50%;padding:3px;stroke-width:3}
+.n{color:var(--muted)}
+.n svg{width:20px;height:20px;color:var(--muted);background:var(--line);border-radius:50%;padding:4px;stroke-width:3}
+.p{color:var(--muted);font-weight:600}
+.big{font-family:var(--f-display);font-weight:800;font-size:1.6rem;color:var(--brick);line-height:1}
+.compare-foot{margin-top:16px;color:var(--muted);font-size:var(--t-sm)}
+
+/* ---------- life ---------- */
+.life-band{background:var(--suntint);overflow:hidden}
+.marquee{overflow:hidden;padding-block:26px 10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mtrack{display:flex;gap:30px;width:max-content;animation:slide 70s linear infinite;padding-inline:15px}
+.marquee:hover .mtrack{animation-play-state:paused}
+.snap{flex:none;width:clamp(200px,24vw,260px);margin:0;background:var(--white);padding:10px 10px 40px;border-radius:6px;box-shadow:var(--shadow);position:relative;transform:rotate(var(--rot,-2deg));transition:transform .35s var(--ease)}
+.snap:nth-child(even){--rot:2.5deg}
+.snap:nth-child(3n){--rot:-1deg}
+.snap:hover{transform:rotate(0) scale(1.04)}
+.snap img{aspect-ratio:3/4;object-fit:cover;width:100%;border-radius:3px}
+.snap figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-family:var(--f-hand);font-weight:700;font-size:1.1rem;color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.mtrack{animation:none}.marquee{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.mtrack [aria-hidden="true"]{display:none}}
+
+/* videos */
+#videos{scroll-margin-top:76px;margin-top:clamp(48px,6vw,72px)}
+.vhead{display:flex;justify-content:space-between;align-items:end;gap:12px 24px;flex-wrap:wrap;margin-bottom:24px}
+.vhead h3{font-size:var(--t-xl);font-weight:800}
+.vhead p{color:var(--muted);max-width:48ch}
+.vgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.vcard{position:relative;display:block;width:100%;padding:0;border:0;border-radius:var(--r-md);overflow:hidden;cursor:pointer;background:var(--ink);aspect-ratio:3/4;box-shadow:var(--shadow);font:inherit;text-align:left;color:var(--white);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.vcard:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.vcard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.vcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,33,53,0) 45%,rgba(14,33,53,.88));pointer-events:none}
+.vplay{position:absolute;z-index:2;left:50%;top:50%;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;color:var(--brick);box-shadow:0 8px 24px rgba(0,0,0,.28);transition:transform .3s var(--ease)}
+.vcard:hover .vplay{transform:scale(1.12)}
+.vplay svg{width:24px;height:24px;fill:currentColor;stroke:none;margin-left:4px}
+.vmeta{position:absolute;z-index:2;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:end;gap:10px}
+.vmeta b{font-family:var(--f-display);font-weight:800;font-size:1.08rem;line-height:1.15}
+.vmeta i{font-style:normal;font-weight:800;font-size:var(--t-xs);background:rgba(255,255,255,.2);padding:3px 8px;border-radius:999px;font-variant-numeric:tabular-nums;flex:none}
+@media (max-width:900px){.vgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.vplay{width:50px;height:50px;margin:-25px 0 0 -25px}}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(9,20,33,.94);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb-inner{display:grid;gap:12px;justify-items:center;width:min(1000px,100%)}
+.lb-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;color:var(--on-dark)}
+.lb-bar p{font-family:var(--f-display);font-weight:800;font-size:1.3rem;line-height:1.2}
+.lb-btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:800;color:var(--ink);background:var(--white);border:0;border-radius:999px;padding:10px 16px;cursor:pointer}
+.lb-btn svg{width:18px;height:18px}
+#lb-video{max-width:100%;max-height:calc(100vh - 170px);border-radius:12px;background:#000}
+.lb-nav{display:flex;gap:10px}
+@media (prefers-reduced-motion:no-preference){.lightbox:not([hidden]) .lb-inner{animation:popin .35s var(--ease)}}
+
+/* ---------- terms ---------- */
+.terms-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;grid-auto-rows:auto;gap:18px}
+.term{background:var(--white);border:1.5px solid var(--line);border-radius:var(--r-md);padding:24px;display:grid;gap:10px;align-content:start}
+.term .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--sky);color:var(--ink)}
+.term h3{font-size:1.3rem;font-weight:800}
+.term p{color:var(--muted);line-height:1.55}
+.term .val{font-family:var(--f-display);font-weight:800;font-size:2.1rem;color:var(--brick);line-height:1}
+.term.feature{grid-row:span 2;background:var(--ink);border-color:var(--ink);color:var(--on-dark);position:relative;overflow:hidden;padding:32px;align-content:end;min-height:340px}
+.term.feature h3{color:var(--white);font-size:clamp(2.2rem,4vw,3rem)}
+.term.feature p{color:var(--on-dark-muted);font-size:var(--t-md)}
+.term.feature .hand{color:var(--sun);font-size:1.3rem}
+.term.feature .bigzero{position:absolute;right:-10px;top:-30px;font-family:var(--f-display);font-weight:800;font-size:15rem;line-height:1;color:rgba(255,255,255,.06);pointer-events:none}
+.term.feature .sticker{position:absolute;right:24px;top:24px;left:auto;transform:rotate(-10deg);width:110px}
+@media (max-width:980px){.terms-grid{grid-template-columns:1fr 1fr}.term.feature{grid-column:1/-1;grid-row:auto;min-height:280px}}
+@media (max-width:600px){.terms-grid{grid-template-columns:1fr}}
+
+/* ---------- choose ---------- */
+.choose-band{background:var(--sky)}
+.choose-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);align-items:start}
+.finder{background:var(--white);border-radius:var(--r-lg);padding:clamp(22px,4vw,36px);box-shadow:var(--shadow-lg);display:grid;gap:18px;min-width:0}
+.finder-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.finder-top h3{font-size:var(--t-xl);font-weight:800}
+.fdots{display:flex;gap:6px}
+.fdots i{width:28px;height:6px;border-radius:99px;background:var(--line);transition:background-color .3s}
+.fdots i.on{background:var(--brick)}
+.fstep{display:grid;gap:14px}
+.fstep.enter{animation:rise .5s var(--ease)}
+.fq{font-weight:800;font-size:var(--t-lg);color:var(--ink);line-height:1.35}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;text-align:left;font:inherit;font-weight:700;color:var(--ink);background:var(--paper);border:2px solid var(--line);border-radius:var(--r-md);padding:16px 18px;cursor:pointer;transition:border-color .2s,background-color .2s,transform .2s var(--ease)}
+.opt:hover{border-color:var(--ink);background:var(--white);transform:translateX(4px)}
+.opt svg{color:var(--brick)}
+.linkbtn{justify-self:start;background:none;border:0;font:inherit;font-weight:800;color:var(--muted);cursor:pointer;padding:4px 0;text-decoration:underline;text-underline-offset:3px}
+.result{border-radius:var(--r-md);padding:22px;display:grid;gap:10px;background:var(--brick-tint)}
+.result.r2{background:var(--sky)}
+.result.r3{background:var(--suntint)}
+.result .rl{font-weight:900;font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--brick)}
+.result h4{font-size:1.8rem;font-weight:800}
+.result .rp{font-family:var(--f-display);font-weight:800;font-size:1.6rem;color:var(--ink);line-height:1}
+.result-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:6px}
+.choose-list{display:grid;gap:14px}
+.choose-list li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;background:var(--white);border-radius:var(--r-md);padding:18px 20px;border:1.5px solid var(--line)}
+.choose-list .mk{font-family:var(--f-display);font-weight:800;font-size:1.05rem;line-height:1;padding:8px 12px;border-radius:10px;background:var(--brick);color:var(--white);white-space:nowrap}
+.choose-list .mk.k2{background:var(--ink)}
+.choose-list .mk.k3{background:var(--sun);color:var(--ink-3)}
+.choose-list b{color:var(--ink)}
+@media (max-width:900px){.choose-grid{grid-template-columns:1fr}}
+
+.path{margin-top:clamp(56px,7vw,88px)}
+.path h3{font-size:var(--t-xl);font-weight:800;margin-bottom:28px}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;left:28px;right:28px;top:27px;height:4px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--ink-2) 0 10px,transparent 10px 18px);opacity:.35}
+.steps li{position:relative;display:grid;gap:10px;align-content:start}
+.steps .sn{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:1.5rem;background:var(--white);color:var(--brick);border:3px solid var(--brick);position:relative;z-index:1}
+.steps li:last-child .sn{background:var(--brick);color:var(--white)}
+.steps h4{font-size:1.15rem;font-weight:800;line-height:1.2}
+.steps p{color:var(--muted);font-size:var(--t-sm);line-height:1.5}
+@media (max-width:900px){.steps{grid-template-columns:1fr;gap:20px}.steps::before{left:26px;right:auto;top:28px;bottom:28px;width:4px;height:auto;background:repeating-linear-gradient(180deg,var(--ink-2) 0 10px,transparent 10px 18px)}.steps li{grid-template-columns:56px 1fr;column-gap:16px}.steps .sn{grid-row:span 2}}
+
+/* ---------- approach (chalkboard band) ---------- */
+.approach{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden}
+.approach::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 45% at 88% 8%,rgba(255,255,255,.07),transparent 70%),repeating-linear-gradient(180deg,transparent 0 37px,rgba(255,255,255,.04) 37px 38px)}
+.approach .wrap{position:relative}
+.approach .eyebrow{color:var(--sun)}
+.approach .h2{color:var(--white)}
+.approach .lede{color:var(--on-dark-muted)}
+.astats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-bottom:clamp(40px,6vw,72px)}
+.astat{border-top:3px dashed rgba(255,255,255,.2);padding-top:16px;display:grid;gap:4px;align-content:start}
+.astat .num{font-family:var(--f-display);font-weight:800;font-size:clamp(2.6rem,5.4vw,4.2rem);line-height:1;color:var(--sun);font-variant-numeric:tabular-nums}
+.astat p{font-weight:700;color:var(--on-dark)}
+.agrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:center}
+.wheel-fig{margin:0;display:grid;gap:16px;justify-items:center;min-width:0}
+.wheel{width:100%;max-width:480px;overflow:visible}
+.wheel text{font-family:var(--f-display);font-weight:800;font-size:15.5px;text-anchor:middle;pointer-events:none}
+.seg{cursor:pointer;outline:none;transform-box:view-box;transform-origin:200px 200px;transition:transform .3s var(--ease)}
+.seg:hover,.seg:focus-visible,.seg.on{transform:translate(var(--tx),var(--ty))}
+.seg:focus-visible path{stroke:var(--white);stroke-width:3}
+.hub{fill:var(--white)}
+.wheel .hub-t1{fill:var(--ink);font-size:19px}
+.wheel .hub-t2{fill:var(--brick);font-family:var(--f-body);font-weight:800;font-size:12.5px}
+.wheel-fig figcaption{color:var(--on-dark-muted);font-size:var(--t-sm);text-align:center;max-width:46ch}
+.aside{display:grid;gap:26px;min-width:0}
+.ablock{display:grid;gap:12px}
+.ablock h3{font-family:var(--f-body);font-weight:900;font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--sun)}
+.cchips{display:flex;flex-wrap:wrap;gap:8px}
+.cchips li{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 14px;font-weight:800;color:var(--white);font-size:var(--t-sm)}
+.checks{display:grid;gap:9px}
+.checks li{position:relative;padding-left:30px;line-height:1.45;color:var(--on-dark)}
+.checks li b{color:var(--white)}
+.checks li::before{content:"";position:absolute;left:0;top:.12em;width:20px;height:20px;border-radius:50%;background:var(--sun) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E2135' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12.5 4 4 8-9'/%3E%3C/svg%3E") center/13px no-repeat}
+.programs{margin-top:clamp(48px,6vw,80px)}
+.programs-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-bottom:18px}
+.programs-head h3{color:var(--white);font-size:var(--t-xl);font-weight:800}
+.programs-head p{color:var(--on-dark-muted)}
+.pchips{display:flex;flex-wrap:wrap;gap:10px}
+.pchips li{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.16);border-radius:999px;padding:9px 16px;font-weight:800;color:var(--white);transition:background-color .2s,transform .2s var(--ease)}
+.pchips li:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+.pchips li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--sun);flex:none}
+.pchips li:nth-child(4n+2)::before{background:var(--brick-2)}
+.pchips li:nth-child(4n+3)::before{background:#3A9A57}
+.pchips li:nth-child(4n+4)::before{background:var(--sky-blue)}
+.founder{position:relative;margin:clamp(48px,6vw,80px) 0 0;background:var(--white);color:var(--ink);border-radius:var(--r-lg);padding:clamp(28px,4vw,44px) clamp(24px,4vw,48px) clamp(24px,3vw,32px) clamp(64px,8vw,110px);display:grid;gap:14px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.founder::before{content:"“";position:absolute;left:clamp(14px,2.5vw,30px);top:clamp(-8px,-1vw,0px);font-family:var(--f-display);font-weight:800;font-size:clamp(6rem,11vw,9rem);line-height:1;color:var(--sun)}
+.founder blockquote{margin:0;font-family:var(--f-hand);font-weight:700;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.35;color:var(--ink);text-wrap:balance}
+.founder figcaption{display:grid;gap:2px}
+.founder figcaption b{font-family:var(--f-display);font-size:1.25rem;font-weight:800}
+.founder figcaption span{color:var(--muted);font-weight:700;font-size:var(--t-sm)}
+.founder .motto{font-weight:900;font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--brick);border-top:1.5px dashed var(--line);padding-top:12px}
+.anote{margin-top:16px;color:var(--on-dark-muted);font-size:var(--t-sm)}
+@media (max-width:900px){.agrid{grid-template-columns:1fr}.astats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ---------- site-only: WhatsApp + downloads ---------- */
+.btn-wa{background:var(--wa);color:var(--white)}
+.btn-wa:hover{background:#127A3C}
+.contact .cta-row{margin-top:4px}
+.camp-a a{color:inherit;text-decoration:none;font-weight:700}
+.camp-a a:hover{color:var(--white);text-decoration:underline;text-underline-offset:3px}
+.wa-float{position:fixed;z-index:40;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(76px + env(safe-area-inset-bottom,0px));display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:var(--white);font-weight:800;text-decoration:none;border-radius:999px;padding:12px 20px 12px 14px;box-shadow:0 14px 30px -12px rgba(0,0,0,.5);transition:transform .25s var(--ease),background-color .2s}
+.wa-float:hover{transform:translateY(-3px);background:#127A3C}
+.wa-float svg{width:24px;height:24px}
+@media (max-width:600px){.wa-float span{display:none}.wa-float{padding:15px}}
+@media (prefers-reduced-motion:no-preference){.wa-float{animation:popin .6s 1.6s cubic-bezier(.3,1.5,.5,1) backwards}}
+
+/* ---------- contact ---------- */
+.contact{background:var(--ink);color:var(--on-dark);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 37px,rgba(255,255,255,.05) 37px 38px);pointer-events:none}
+.citem .email{overflow-wrap:normal;word-break:normal}
+.contact-grid{position:relative;display:grid;grid-template-columns:1fr minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
+.contact h2{color:var(--white);font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800}
+.contact h2 span{color:var(--sun)}
+.contact .lede{color:var(--on-dark-muted)}
+.contact-copy{display:grid;gap:22px;min-width:0}
+.ccard{background:var(--white);color:var(--text);border-radius:var(--r-lg);padding:28px;display:grid;gap:16px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);position:relative}
+.ccard .logo{width:92px;justify-self:center;margin-top:-4px}
+.ccard h3{text-align:center;font-size:1.4rem;font-weight:800}
+.citem{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px;border-radius:14px;background:var(--sky)}
+.citem a{font-weight:800;color:var(--ink);text-underline-offset:3px}
+.copy{font:inherit;font-weight:800;font-size:var(--t-xs);color:var(--ink);background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;transition:border-color .2s}
+.copy:hover{border-color:var(--ink)}
+.campuses{position:relative;margin-top:clamp(48px,6vw,80px)}
+.campuses h3{color:var(--white);font-size:var(--t-xl);font-weight:800;margin-bottom:6px}
+.campuses .sub{color:var(--on-dark-muted);margin-bottom:22px}
+.camp-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.camp{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.15);border-radius:var(--r-lg);padding:26px;display:grid;gap:10px;align-content:start}
+.camp-tag{justify-self:start;background:var(--sun);color:var(--ink-3);font-weight:900;font-size:var(--t-xs);letter-spacing:.12em;padding:5px 12px;border-radius:999px}
+.camp h4{color:var(--white);font-size:1.5rem;font-weight:800}
+.camp h4 small{display:block;font-family:var(--f-body);font-size:var(--t-sm);color:var(--on-dark-muted);font-weight:700;margin-top:4px}
+.camp-p{color:var(--on-dark);font-weight:700}
+.camp-a{display:flex;gap:10px;align-items:flex-start;color:var(--on-dark-muted);line-height:1.45}
+.camp-a svg{width:20px;height:20px;color:var(--sun);margin-top:2px}
+.camp .btn{justify-self:start;margin-top:6px}
+@media (max-width:760px){.camp-grid{grid-template-columns:1fr}}
+.citem .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--white);color:var(--brick)}
+.citem small{display:block;font-weight:900;font-size:var(--t-xs);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.citem span{font-weight:800;color:var(--ink);overflow-wrap:anywhere}
+.signoff{font-family:var(--f-hand);font-weight:700;font-size:clamp(1.15rem,2vw,1.4rem);color:var(--sun);line-height:1.35}
+.foot{position:relative;margin-top:clamp(48px,6vw,72px);padding-top:22px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--on-dark-muted);font-size:var(--t-sm)}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}.ccard{max-width:480px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.7 6.3.9-4.6 4.4 1.1 6.2L12 17.1 6.4 20l1.1-6.2L2.9 9.4l6.3-.9z"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V10l7-5 7 5v11"/><path d="M10 21v-5h4v5"/><path d="M12 5V2.5h3.5"/><circle cx="12" cy="11" r="1.6"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></symbol>
+  <symbol id="i-board" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20l4-4 4 4"/><path d="M7 9h6M7 12h4"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.6"/><path d="M15.6 14.3A5 5 0 0 1 21 19"/></symbol>
+  <symbol id="i-mega" viewBox="0 0 24 24"><path d="M3 10v4a1 1 0 0 0 1 1h3l6 4V5L7 9H4a1 1 0 0 0-1 1z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4L17 12H5"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 21l5-2.5 5 2.5-1.5-7"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5z"/><path d="m3 7.5 9 4.5 9-4.5M12 12v9"/></symbol>
+  <symbol id="i-swing" viewBox="0 0 24 24"><path d="M2.5 4h19"/><path d="M5 4 3 21M19 4l2 17"/><path d="M9 4v10M15 4v10"/><rect x="7.5" y="14" width="9" height="2.6" rx="1"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-renew" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4.5L3 9"/><path d="M3 4v5h5"/><path d="M4 13a8 8 0 0 0 14.5 4.5L21 15"/><path d="M21 20v-5h-5"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><path d="M8.5 13h7M8.5 17h5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M9 3 4 5.5 2.5 10l3 1.2V21h13v-9.8l3-1.2L20 5.5 15 3c-.4 1.6-1.6 2.6-3 2.6S9.4 4.6 9 3z"/></symbol>
+  <symbol id="i-books" viewBox="0 0 24 24"><rect x="4" y="4" width="4" height="15" rx="1"/><rect x="9" y="7" width="4" height="12" rx="1"/><path d="m14.5 8.2 3.8-1 3 11.4-3.8 1z"/><path d="M3 20h18"/></symbol>
+  <symbol id="i-socks" viewBox="0 0 24 24"><path d="M9 3h6v8.5l-4.6 6.7a3 3 0 0 1-4.9-3.4L9 10.4V3z"/><path d="M9 6.5h6"/></symbol>
+  <symbol id="i-belt" viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="6" rx="1.5"/><rect x="9" y="7.5" width="6" height="9" rx="1"/><path d="M12 12h3"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"/><path d="M9 21v-5h6v5"/><path d="M10 4.5V3h4v1.5"/></symbol>
+  <symbol id="i-diary" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v6l-1.5-1-1.5 1V3"/></symbol>
+  <symbol id="i-notebook" viewBox="0 0 24 24"><rect x="6" y="3" width="14" height="18" rx="2"/><path d="M4 7h4M4 12h4M4 17h4"/><path d="M11 8h6M11 12h6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5"/><path d="M5 20h14"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3.5 21l1.5-4.8A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</svg>
+
+<nav class="topbar" aria-label="Brochure sections">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top"><img src="assets/logo.png" alt="" width="38" height="41"><span>Dream Spire<small>School</small></span></a>
+    <div class="navlinks">
+      <a href="#why">Why us</a>
+      <a href="#models">Models</a>
+      <a href="#compare">Compare</a>
+      <a href="#videos">Videos</a>
+      <a href="#terms">Terms</a>
+      <a href="#choose">Find your model</a>
+    </div>
+    <a class="btn btn-primary btn-small" href="#contact">Get in touch</a>
+  </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Franchise opportunities</p>
+      <h1 class="hero-title">
+        <span class="ht-1">Build your own</span>
+        <span class="ht-2"><span class="ruled-word">preschool</span></span>
+      </h1>
+      <p class="hero-tag">Nurturing Young Minds, Building Bright Futures</p>
+      <p class="hero-lede">Partner with Dream Spire School and open a preschool with a ready brand, structured academic support and hands-on help from setup to launch day.</p>
+      <ul class="chips">
+        <li><svg class="ico"><use href="#i-school"/></svg>3 franchise models</li>
+        <li><svg class="ico"><use href="#i-award"/></svg>From ₹50,000</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>No royalty</li>
+        <li><svg class="ico"><use href="#i-pin"/></svg>2 campuses running in Palam, Delhi</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#models">Explore the 3 models <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#choose">Find your model</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="rainbow" viewBox="0 0 400 210" aria-hidden="true">
+        <path pathLength="1" d="M28 205a172 172 0 0 1 344 0" stroke="#C43D2B"/>
+        <path pathLength="1" d="M48 205a152 152 0 0 1 304 0" stroke="#F4B425"/>
+        <path pathLength="1" d="M68 205a132 132 0 0 1 264 0" stroke="#3A9A57"/>
+        <path pathLength="1" d="M88 205a112 112 0 0 1 224 0" stroke="#4C9BD9"/>
+      </svg>
+      <figure class="polaroid p1"><img src="assets/web/assembly-wide.jpg" alt="Children in school jackets at a Dream Spire morning assembly, with colourful wall murals"><figcaption>Morning assembly</figcaption></figure>
+      <figure class="polaroid p2"><img src="assets/web/water-play.jpg" alt="Children playing in an inflatable pool on water play day"><figcaption>Water play day</figcaption></figure>
+      <figure class="polaroid p3"><img src="assets/web/hello-summer.jpg" alt="A child in sunglasses on the Hello Summer stage"><figcaption>Hello Summer</figcaption></figure>
+      <div class="sticker"><div><span>Zero</span>royalty</div></div>
+      <p class="scribble">Real Dream Spire<br>schools, open today<svg viewBox="0 0 42 42" aria-hidden="true"><path d="M4 6c12 2 22 10 26 26"/><path d="M22 28l8 5 3-9"/></svg></p>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Highlights">
+  <div class="ticker-track">
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>3 franchise models</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Start from ₹50,000</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>No royalty</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>3-year partnership</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Up to 30 student starter kits</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Training and launch support</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Real school videos inside</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>17+ unique programs</span>
+    <span><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>NEP 2020 aligned</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>3 franchise models</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Start from ₹50,000</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>No royalty</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>3-year partnership</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Up to 30 student starter kits</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Training and launch support</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>Real school videos inside</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>17+ unique programs</span>
+    <span aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>NEP 2020 aligned</span>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="band" id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-copy">
+        <p class="eyebrow rv">Why Dream Spire School</p>
+        <h2 class="h2 rv" style="--d:.05s">Open a school that parents trust from day one</h2>
+        <p class="lede rv" style="--d:.1s">Dream Spire School gives you a ready brand, a structured academic approach and hands-on support, so you can focus on what matters most: children and their families.</p>
+        <div class="stats">
+          <div class="stat rv" style="--d:.05s"><span class="num" data-count="3">3</span><p>Franchise models<span>Pick the one that fits your budget</span></p></div>
+          <div class="stat rv" style="--d:.12s"><span class="num">₹0</span><p>Royalty<span>No royalty is charged</span></p></div>
+          <div class="stat rv" style="--d:.19s"><span class="num"><span data-count="3">3</span><small>years</small></span><p>Partnership<span>Renew after 3 years for ₹10,000</span></p></div>
+          <div class="stat rv" style="--d:.26s"><span class="num" data-count="30">30</span><p>Student starter kits<span>Included with Model 1</span></p></div>
+        </div>
+      </div>
+      <figure class="why-photo rv">
+        <img src="assets/web/teacher-circle.jpg" alt="Teachers guiding a group of children at a classroom wall display" loading="lazy">
+        <figcaption>Teachers and children, every day</figcaption>
+      </figure>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar rv"><span class="ic"><svg class="ico"><use href="#i-award"/></svg></span><h3>Brand &amp; identity</h3><p>Open under the Dream Spire School name with an agreed school identity.</p></div>
+      <div class="pillar rv" style="--d:.06s"><span class="ic"><svg class="ico"><use href="#i-cap"/></svg></span><h3>Academic system</h3><p>Curriculum planning, teaching methods and classroom practice.</p></div>
+      <div class="pillar rv" style="--d:.12s"><span class="ic"><svg class="ico"><use href="#i-board"/></svg></span><h3>Training</h3><p>Operations, admissions, parent communication and daily routines.</p></div>
+      <div class="pillar rv"><span class="ic"><svg class="ico"><use href="#i-people"/></svg></span><h3>Hiring support</h3><p>Help with finding, selecting and onboarding teachers and staff.</p></div>
+      <div class="pillar rv" style="--d:.06s"><span class="ic"><svg class="ico"><use href="#i-mega"/></svg></span><h3>Marketing</h3><p>Admission campaigns, local outreach and promotional planning.</p></div>
+      <div class="pillar rv" style="--d:.12s"><span class="ic"><svg class="ico"><use href="#i-flag"/></svg></span><h3>Launch assistance</h3><p>Getting your school, team and processes ready for opening day.</p></div>
+    </div>
+    <p class="pillars-note">The level of support depends on the model you choose. Each model below lists exactly what is included.</p>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="band approach" id="approach">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow rv">The Dream Spire approach</p>
+      <h2 class="h2 rv" style="--d:.05s">A school model that already works</h2>
+      <p class="lede rv" style="--d:.1s">Dream Spire runs two play school and day care campuses in Palam, New Delhi, for children aged 1.5 to 6 years. This is the approach behind them.</p>
+    </div>
+    <div class="astats">
+      <div class="astat rv"><span class="num" data-count="2">2</span><p>Campuses in Palam, Delhi</p></div>
+      <div class="astat rv" style="--d:.08s"><span class="num">1.5–6</span><p>Years age group</p></div>
+      <div class="astat rv" style="--d:.16s"><span class="num" data-count="8">8</span><p>Learning strategies</p></div>
+      <div class="astat rv" style="--d:.24s"><span class="num"><span data-count="17">17</span>+</span><p>Unique programs</p></div>
+    </div>
+    <div class="agrid">
+      <figure class="wheel-fig">
+        <svg class="wheel" viewBox="0 0 400 400" role="list" aria-label="The DSS Learning Wheel: eight multiple intelligences">
+<g class="seg rv-pop" style="--d:0.00s;--tx:0.0px;--ty:-8.0px" tabindex="0" role="listitem" aria-label="Picture Smart (Visual)" data-plain="Visual" data-name="Picture Smart"><path d="M131.7 24.8A188 188 0 0 1 268.3 24.8L226.9 131.1A74 74 0 0 0 173.1 131.1Z" fill="#C43D2B"/><text x="200.0" y="66.0" fill="#fff"><tspan x="200.0">Picture</tspan><tspan x="200.0" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.07s;--tx:5.7px;--ty:-5.7px" tabindex="0" role="listitem" aria-label="Music Smart (Musical)" data-plain="Musical" data-name="Music Smart"><path d="M275.6 27.9A188 188 0 0 1 372.1 124.4L267.8 170.3A74 74 0 0 0 229.7 132.2Z" fill="#F4B425"/><text x="292.6" y="104.4" fill="#0E2135"><tspan x="292.6">Music</tspan><tspan x="292.6" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.14s;--tx:8.0px;--ty:0.0px" tabindex="0" role="listitem" aria-label="People Smart (Interpersonal)" data-plain="Interpersonal" data-name="People Smart"><path d="M375.2 131.7A188 188 0 0 1 375.2 268.3L268.9 226.9A74 74 0 0 0 268.9 173.1Z" fill="#3A9A57"/><text x="331.0" y="197.0" fill="#fff"><tspan x="331.0">People</tspan><tspan x="331.0" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.21s;--tx:5.7px;--ty:5.7px" tabindex="0" role="listitem" aria-label="Self Smart (Intrapersonal)" data-plain="Intrapersonal" data-name="Self Smart"><path d="M372.1 275.6A188 188 0 0 1 275.6 372.1L229.7 267.8A74 74 0 0 0 267.8 229.7Z" fill="#4C9BD9"/><text x="292.6" y="289.6" fill="#fff"><tspan x="292.6">Self</tspan><tspan x="292.6" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.28s;--tx:0.0px;--ty:8.0px" tabindex="0" role="listitem" aria-label="Body Smart (Kinesthetic)" data-plain="Kinesthetic" data-name="Body Smart"><path d="M268.3 375.2A188 188 0 0 1 131.7 375.2L173.1 268.9A74 74 0 0 0 226.9 268.9Z" fill="#A3271A"/><text x="200.0" y="328.0" fill="#fff"><tspan x="200.0">Body</tspan><tspan x="200.0" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.35s;--tx:-5.7px;--ty:5.7px" tabindex="0" role="listitem" aria-label="Word Smart (Linguistic)" data-plain="Linguistic" data-name="Word Smart"><path d="M124.4 372.1A188 188 0 0 1 27.9 275.6L132.2 229.7A74 74 0 0 0 170.3 267.8Z" fill="#E8A317"/><text x="107.4" y="289.6" fill="#0E2135"><tspan x="107.4">Word</tspan><tspan x="107.4" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.42s;--tx:-8.0px;--ty:0.0px" tabindex="0" role="listitem" aria-label="Nature Smart (Naturalistic)" data-plain="Naturalistic" data-name="Nature Smart"><path d="M24.8 268.3A188 188 0 0 1 24.8 131.7L131.1 173.1A74 74 0 0 0 131.1 226.9Z" fill="#2F8A4C"/><text x="69.0" y="197.0" fill="#fff"><tspan x="69.0">Nature</tspan><tspan x="69.0" dy="16">Smart</tspan></text></g>
+<g class="seg rv-pop" style="--d:0.49s;--tx:-5.7px;--ty:-5.7px" tabindex="0" role="listitem" aria-label="Number &amp; Logic Smart (Logical)" data-plain="Logical" data-name="Number &amp; Logic Smart"><path d="M27.9 124.4A188 188 0 0 1 124.4 27.9L170.3 132.2A74 74 0 0 0 132.2 170.3Z" fill="#3B86C4"/><text x="107.4" y="104.4" fill="#fff"><tspan x="107.4">Number &amp;</tspan><tspan x="107.4" dy="16">Logic Smart</tspan></text></g>
+
+          <circle class="hub" cx="200" cy="200" r="66"/>
+          <text class="hub-t1" id="hub-t1" x="200" y="197">DSS</text>
+          <text class="hub-t2" id="hub-t2" x="200" y="217">Learning Wheel</text>
+        </svg>
+        <figcaption>The DSS Learning Wheel: eight multiple intelligences that shape how Dream Spire teaches. Hover or tap a segment.</figcaption>
+      </figure>
+      <div class="aside">
+        <div class="ablock rv"><h3>Classes</h3><ul class="cchips"><li>Pre-Nursery</li><li>Nursery</li><li>LKG</li><li>UKG</li><li>Half-day &amp; full-day day care</li></ul></div>
+        <div class="ablock rv" style="--d:.06s"><h3>Every day</h3><ul class="checks"><li>Learning by doing: activities, worksheets, arts and craft</li><li>One happiness activity every day</li><li>Story yoga, plus health and growth charts</li></ul></div>
+        <div class="ablock rv" style="--d:.12s"><h3>Standards</h3><ul class="checks"><li><b>Learning model aligned with NEP 2020</b></li><li>Highly qualified, trained educators and an ideal student–teacher ratio</li><li>Fully equipped audio-visual room</li><li>Indoor and outdoor games</li><li>Spacious concept rooms decorated by teachers and students</li><li>Gated campuses, authorised pick-up only</li></ul></div>
+      </div>
+    </div>
+    <div class="programs">
+      <div class="programs-head"><h3 class="rv">17 unique programs</h3><p class="rv" style="--d:.05s">Designed for healthy brain development.</p></div>
+      <ul class="pchips">
+        <li class="rv-pop" style="--d:0.00s">Child Happiness</li>
+        <li class="rv-pop" style="--d:0.04s">E-Learning</li>
+        <li class="rv-pop" style="--d:0.08s">Multiple Intelligence Pedagogy</li>
+        <li class="rv-pop" style="--d:0.12s">STEAM Learning</li>
+        <li class="rv-pop" style="--d:0.16s">Rhyme Yoga</li>
+        <li class="rv-pop" style="--d:0.20s">Story Yoga</li>
+        <li class="rv-pop" style="--d:0.24s">Sound Yoga</li>
+        <li class="rv-pop" style="--d:0.28s">Blooming Yoga</li>
+        <li class="rv-pop" style="--d:0.32s">Shadow Puppetry</li>
+        <li class="rv-pop" style="--d:0.36s">Rhyme Basket</li>
+        <li class="rv-pop" style="--d:0.40s">Picture Talk</li>
+        <li class="rv-pop" style="--d:0.44s">Tongue Twisters &amp; PR Skills</li>
+        <li class="rv-pop" style="--d:0.48s">Concept Worksheet</li>
+        <li class="rv-pop" style="--d:0.52s">Safety &amp; Security</li>
+        <li class="rv-pop" style="--d:0.56s">Health &amp; Hygiene</li>
+        <li class="rv-pop" style="--d:0.60s">Complete Phonetic Program</li>
+        <li class="rv-pop" style="--d:0.64s">Musical Theater</li>
+      </ul>
+    </div>
+    <figure class="founder rv">
+      <blockquote>“…holistic education where children evolve as individuals who are self-motivated and creative”</blockquote>
+      <figcaption><b>Mr. Piyush Jain</b><span>Founder and Director, Dream Spire School</span></figcaption>
+      <p class="motto">A Journey of Learning, A Legacy of Success</p>
+    </figure>
+    <p class="anote">Academic support for each franchise model is listed in that model's details below.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="band gallery-band" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow rv">Dream Spire schools in action</p>
+      <h2 class="h2 rv" style="--d:.05s">Already running. Already loved.</h2>
+      <p class="lede rv" style="--d:.1s">These photos are from Dream Spire schools that are open today. This is what your school can look like.</p>
+    </div>
+    <div class="bento">
+      <figure class="tile t1 rv"><img src="assets/web/classroom-setup.jpg" alt="Colourful classroom with yellow chairs, tables and an ocean wall mural" loading="lazy"><figcaption>Bright, child-friendly classrooms</figcaption></figure>
+      <figure class="tile t2 rv" style="--d:.08s"><img src="assets/web/activity-tables.jpg" alt="Collage of children working at colourful activity tables" loading="lazy"><figcaption>Hands-on activity time</figcaption></figure>
+      <figure class="tile t3 rv" style="--d:.14s"><img src="assets/web/assembly-rows.jpg" alt="Children standing in rows for morning assembly" loading="lazy"><figcaption>Morning assembly</figcaption></figure>
+      <figure class="tile t4 rv" style="--d:.2s"><img src="assets/web/parents-meet.jpg" alt="Mothers and children seated together at a parent meet" loading="lazy"><figcaption>Parent meet</figcaption></figure>
+      <figure class="tile t5 rv"><img src="assets/web/play-zone.jpg" alt="Indoor play zone with green turf, a slide and swings" loading="lazy"><figcaption>Indoor play zone</figcaption></figure>
+      <figure class="tile t6 rv" style="--d:.08s"><img src="assets/web/pt-drill.jpg" alt="Children in yellow T-shirts doing a fitness drill" loading="lazy"><figcaption>Fitness &amp; drill</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- MODELS OVERVIEW -->
+<section class="band models-band" id="models">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow rv">Three ways to partner</p>
+      <h2 class="h2 rv" style="--d:.05s">Choose the model that fits you</h2>
+      <p class="lede rv" style="--d:.1s">Pick based on your investment budget, your infrastructure and how much support you want.</p>
+    </div>
+    <div class="mcards">
+      <article class="mcard m1 rv">
+        <div class="mcard-top"><span class="lbl">Model 1</span><span class="tag">Most complete</span></div>
+        <div class="mcard-body">
+          <h3>Complete School Setup</h3>
+          <p class="price">₹12–17 Lakh</p>
+          <p class="price-note">Indicative investment range</p>
+          <p class="pitch">We set up your school, end to end</p>
+          <ul class="ticks">
+            <li>Complete infrastructure and interiors</li>
+            <li>Starter kits for 30 students</li>
+            <li>Play area with 6 swings</li>
+            <li>Full hiring and marketing support</li>
+          </ul>
+          <p class="bestfor"><b>Best for:</b> entrepreneurs who want a comprehensive setup with infrastructure, academic guidance and launch support.</p>
+          <a class="btn btn-small" href="#model-1">See full details <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="mcard m2 rv" style="--d:.1s">
+        <div class="mcard-top"><span class="lbl">Model 2</span><span class="tag">3 years of support</span></div>
+        <div class="mcard-body">
+          <h3>Standard Franchise</h3>
+          <p class="price" data-count="150000" data-format="inr" data-prefix="₹">₹1,50,000</p>
+          <p class="price-note">One-time franchise fee</p>
+          <p class="pitch">Brand, training, kits and 3 years of support</p>
+          <ul class="ticks">
+            <li>Dream Spire brand and identity</li>
+            <li>Training plus 3 years of support</li>
+            <li>Starter kits for 10 students</li>
+            <li>3 small swings</li>
+          </ul>
+          <p class="bestfor"><b>Best for:</b> entrepreneurs who arrange their own infrastructure and want to run under the Dream Spire brand.</p>
+          <a class="btn btn-small" href="#model-2">See full details <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="mcard m3 rv" style="--d:.2s">
+        <div class="mcard-top"><span class="lbl">Model 3</span><span class="tag">Lowest entry cost</span></div>
+        <div class="mcard-body">
+          <h3>Basic Branding &amp; Support</h3>
+          <p class="price" data-count="50000" data-format="inr" data-prefix="₹">₹50,000</p>
+          <p class="price-note">Franchise fee</p>
+          <p class="pitch">The brand and guidance; you build the rest</p>
+          <ul class="ticks">
+            <li>Name and branding rights</li>
+            <li>Academic guidance</li>
+            <li>Marketing support</li>
+            <li>School management guidance</li>
+          </ul>
+          <p class="bestfor"><b>Best for:</b> entrepreneurs who already have, or will arrange, their own school infrastructure.</p>
+          <a class="btn btn-small" href="#model-3">See full details <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MODEL 1 -->
+<section class="model m1" id="model-1" aria-labelledby="m1-title">
+  <div class="model-hero">
+    <div class="wrap mh-grid">
+      <div class="mh-copy">
+        <span class="badge rv">Model <b>1</b></span>
+        <h2 class="h2 rv" id="m1-title" style="--d:.05s">Complete School Setup</h2>
+        <div class="price-block rv" style="--d:.1s"><p class="price">₹12–17 Lakh</p><p class="price-note">Indicative investment range</p></div>
+        <p class="lede rv" style="--d:.15s">Dream Spire School provides a comprehensive school setup tailored to the premises and area you select. We coordinate the major infrastructure, academic, staffing and marketing requirements, so launching your school is simple.</p>
+        <p class="best rv" style="--d:.2s"><b>Best suited for</b>Entrepreneurs who want a comprehensive school setup with infrastructure, academic guidance and launch support.</p>
+      </div>
+      <div class="mh-photos rv" style="--d:.1s">
+        <img class="a" src="assets/web/classroom-setup.jpg" alt="A fully set-up Dream Spire classroom" loading="lazy">
+        <img class="b" src="assets/web/play-zone.jpg" alt="Indoor play area with swings and a slide" loading="lazy">
+        <span class="note">Classrooms + play area, set up for you</span>
+      </div>
+    </div>
+  </div>
+  <div class="incl">
+    <div class="wrap">
+      <div class="incl-head"><h3 class="rv">What's included</h3><div class="fourline rv"></div></div>
+      <div class="incl-grid">
+        <div class="icard rv"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-school"/></svg></span><h4>Complete infrastructure &amp; school setup</h4></div>
+          <ul class="ticks"><li>Classroom furniture and student benches</li><li>Child-friendly classrooms, learning spaces and essential facilities</li><li>Interiors, educational displays and school infrastructure</li><li>Play area with 6 small children's swings</li><li>Other essential materials and equipment for launch, as specified in the final quotation</li></ul></div>
+        <div class="icard rv" style="--d:.06s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-box"/></svg></span><h4>Student starter kits</h4></div>
+          <ul class="ticks"><li>Starter kits for 30 students</li><li>Each kit: 2 uniforms, book set, socks, belt, 2 bags, 1 diary, 3 notebooks and other essentials</li><li>Additional kits at ₹4,000 per kit</li></ul></div>
+        <div class="icard rv" style="--d:.12s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-cap"/></svg></span><h4>Academic support</h4></div>
+          <ul class="ticks"><li>Comprehensive academic guidance and implementation</li><li>Curriculum planning and academic structure</li><li>Teaching methods, classroom practice and student engagement</li><li>Admission documents: prospectus, admission forms and more</li><li>Training on school operations and academic processes</li></ul></div>
+        <div class="icard rv"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-people"/></svg></span><h4>Hiring &amp; staffing support</h4></div>
+          <ul class="ticks"><li>Teacher and staff recruitment</li><li>Identifying suitable candidates and staff requirements</li><li>Hiring process and onboarding preparation</li></ul></div>
+        <div class="icard rv" style="--d:.06s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-mega"/></svg></span><h4>Branding &amp; marketing support</h4></div>
+          <ul class="ticks"><li>School branding and identity as per the franchise agreement</li><li>Marketing strategy and promotional planning</li><li>Admission campaigns and local outreach</li><li>Promotional materials and school-launch activities</li></ul></div>
+        <div class="icard rv" style="--d:.12s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-flag"/></svg></span><h4>Training &amp; launch assistance</h4></div>
+          <ul class="ticks"><li>Partner training on operations and administration</li><li>Admission management, parent communication and daily operations</li><li>Preparing the school for launch and setting up processes</li></ul></div>
+      </div>
+
+      <div class="kit rv">
+        <div class="kit-count"><span class="x"><small>×</small><span data-count="30">30</span></span><p>students<br>kitted out</p></div>
+        <div class="kit-main">
+          <h4>Every starter kit includes</h4>
+          <ul class="kit-items">
+            <li class="rv-pop" style="--d:.05s"><svg class="ico"><use href="#i-shirt"/></svg>2 uniforms</li>
+            <li class="rv-pop" style="--d:.1s"><svg class="ico"><use href="#i-books"/></svg>Book set</li>
+            <li class="rv-pop" style="--d:.15s"><svg class="ico"><use href="#i-socks"/></svg>Socks</li>
+            <li class="rv-pop" style="--d:.2s"><svg class="ico"><use href="#i-belt"/></svg>Belt</li>
+            <li class="rv-pop" style="--d:.25s"><svg class="ico"><use href="#i-bag"/></svg>2 bags</li>
+            <li class="rv-pop" style="--d:.3s"><svg class="ico"><use href="#i-diary"/></svg>1 diary</li>
+            <li class="rv-pop" style="--d:.35s"><svg class="ico"><use href="#i-notebook"/></svg>3 notebooks</li>
+          </ul>
+          <p class="kit-extra">Plus other student essentials. Need more? <b>Additional kits at ₹4,000 per kit.</b></p>
+        </div>
+      </div>
+
+      <div class="panels">
+        <div class="panel rv"><h4><svg class="ico"><use href="#i-doc"/></svg>How is the investment finalised?</h4>
+          <p>The ₹12–17 lakh range is indicative. Your final quotation is prepared based on your location, area, premises, infrastructure needs and agreed deliverables.</p>
+          <p>It will list the infrastructure and materials delivered, the scope of support and the commercial terms.</p></div>
+        <div class="panel warn rv" style="--d:.08s"><h4><svg class="ico"><use href="#i-home"/></svg>Your responsibility</h4>
+          <p>Arrange the premises and meet the requirements in the franchise agreement.</p>
+          <p>The exact split of responsibilities, including any premises-related costs, is documented in the final quotation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODEL 2 -->
+<section class="model m2" id="model-2" aria-labelledby="m2-title">
+  <div class="model-hero">
+    <div class="wrap mh-grid">
+      <div class="mh-copy">
+        <span class="badge rv">Model <b>2</b></span>
+        <h2 class="h2 rv" id="m2-title" style="--d:.05s">Standard Franchise</h2>
+        <div class="price-block rv" style="--d:.1s"><p class="price" data-count="150000" data-format="inr" data-prefix="₹">₹1,50,000</p><p class="price-note">One-time franchise fee</p></div>
+        <p class="lede rv" style="--d:.15s">You get the brand, training, initial student kits, play equipment and ongoing guidance needed to establish and run a preschool.</p>
+        <ul class="highlights rv" style="--d:.2s">
+          <li><i>3</i>years of support</li>
+          <li><i>10</i>starter kits</li>
+          <li><i>3</i>small swings</li>
+        </ul>
+        <p class="best rv" style="--d:.25s"><b>Best suited for</b>Entrepreneurs who want to operate under the Dream Spire School brand while arranging their own school infrastructure.</p>
+      </div>
+      <div class="mh-photos rv" style="--d:.1s">
+        <img class="a" src="assets/web/assembly-rows.jpg" alt="Children lined up for assembly in a Dream Spire school" loading="lazy">
+        <img class="b" src="assets/web/worksheets-1.jpg" alt="Collage of children colouring worksheets" loading="lazy">
+        <span class="note">Your space, our brand and system</span>
+      </div>
+    </div>
+  </div>
+  <div class="incl">
+    <div class="wrap">
+      <div class="incl-head"><h3 class="rv">What's included</h3><div class="fourline rv"></div></div>
+      <div class="incl-grid">
+        <div class="icard rv"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-award"/></svg></span><h4>Franchise rights &amp; branding</h4></div>
+          <ul class="ticks"><li>Right to operate under the Dream Spire School name</li><li>Access to the agreed branding and school identity</li><li>Guidance on maintaining brand standards</li></ul></div>
+        <div class="icard rv" style="--d:.06s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-calendar"/></svg></span><h4>Training &amp; three-year support</h4></div>
+          <ul class="ticks"><li>Training on preschool operations and administration</li><li>3 years of franchise support and guidance</li><li>School management, admissions, parent communication and daily operations</li><li>How to establish and run the school effectively</li></ul></div>
+        <div class="icard rv" style="--d:.12s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-box"/></svg></span><h4>Student starter kits</h4></div>
+          <ul class="ticks"><li>Kits for 10 students</li><li>Each kit: uniform, books, socks, belt, two bags and other essentials</li><li>Additional kits at ₹4,000 per kit</li></ul></div>
+        <div class="icard rv"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-swing"/></svg></span><h4>Play equipment</h4></div>
+          <ul class="ticks"><li>3 small children's swings for the school</li></ul></div>
+        <div class="icard rv" style="--d:.06s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-cap"/></svg></span><h4>Academic &amp; operational support</h4></div>
+          <ul class="ticks"><li>Academic planning and curriculum implementation</li><li>Admission process and documentation</li><li>Classroom management and teaching practice</li><li>Basic operational processes to run a preschool</li></ul></div>
+        <div class="icard rv" style="--d:.12s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-mega"/></svg></span><h4>Hiring &amp; marketing assistance</h4></div>
+          <ul class="ticks"><li>Teacher and staff recruitment guidance</li><li>Marketing and admission-promotion guidance</li><li>School-launch planning and local promotion</li></ul></div>
+      </div>
+
+      <div class="kit rv">
+        <div class="kit-count"><span class="x"><small>×</small><span data-count="10">10</span></span><p>students<br>kitted out</p></div>
+        <div class="kit-main">
+          <h4>Every starter kit includes</h4>
+          <ul class="kit-items">
+            <li class="rv-pop" style="--d:.05s"><svg class="ico"><use href="#i-shirt"/></svg>Uniform</li>
+            <li class="rv-pop" style="--d:.1s"><svg class="ico"><use href="#i-books"/></svg>Books</li>
+            <li class="rv-pop" style="--d:.15s"><svg class="ico"><use href="#i-socks"/></svg>Socks</li>
+            <li class="rv-pop" style="--d:.2s"><svg class="ico"><use href="#i-belt"/></svg>Belt</li>
+            <li class="rv-pop" style="--d:.25s"><svg class="ico"><use href="#i-bag"/></svg>2 bags</li>
+          </ul>
+          <p class="kit-extra">Plus other student essentials. <b>Additional kits at ₹4,000 per kit.</b></p>
+        </div>
+      </div>
+
+      <div class="arrange rv">
+        <div><h4>What you arrange</h4><p class="sub">You independently arrange and finance:</p></div>
+        <div>
+          <ul class="dots">
+            <li>School premises and property costs</li>
+            <li>Classroom infrastructure, benches, furniture and interiors</li>
+            <li>Play area beyond the 3 included swings</li>
+            <li>Any equipment, materials or facilities not in the package</li>
+          </ul>
+          <p class="note-line">Dream Spire School provides the agreed training, branding, starter kits, play equipment and support services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODEL 3 -->
+<section class="model m3" id="model-3" aria-labelledby="m3-title">
+  <div class="model-hero">
+    <div class="wrap mh-grid">
+      <div class="mh-copy">
+        <span class="badge rv">Model <b>3</b></span>
+        <h2 class="h2 rv" id="m3-title" style="--d:.05s">Basic Branding &amp; Support</h2>
+        <div class="price-block rv" style="--d:.1s"><p class="price"><span data-count="50000" data-format="inr" data-prefix="₹">₹50,000</span></p><p class="price-note">Franchise fee</p></div>
+        <p class="lede rv" style="--d:.15s">A cost-effective way to open a preschool under the Dream Spire School brand, without buying a complete infrastructure package.</p>
+        <p class="best rv" style="--d:.2s"><b>Best suited for</b>Entrepreneurs who already have, or plan to arrange, their own school infrastructure and mainly need a brand, academic guidance and business support.</p>
+      </div>
+      <div class="mh-photos rv" style="--d:.1s">
+        <img class="a" src="assets/web/rainbow-day.jpg" alt="Children celebrating rainbow day under a painted rainbow" loading="lazy" style="object-position:50% 30%">
+        <img class="b" src="assets/web/yoga-time.jpg" alt="Children sitting on turf during yoga time" loading="lazy">
+        <span class="note">Your school, the Dream Spire name</span>
+      </div>
+    </div>
+  </div>
+  <div class="incl">
+    <div class="wrap">
+      <div class="incl-head"><h3 class="rv">What's included</h3><div class="fourline rv"></div></div>
+      <div class="incl-grid four">
+        <div class="icard rv"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-award"/></svg></span><h4>Name &amp; branding rights</h4></div>
+          <ul class="ticks"><li>Use of the Dream Spire School name and agreed branding</li><li>Guidance on applying the brand identity</li><li>Brand-use guidelines</li></ul></div>
+        <div class="icard rv" style="--d:.06s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-cap"/></svg></span><h4>Academic support</h4></div>
+          <ul class="ticks"><li>Curriculum planning and implementation</li><li>Teaching practices, classroom activities and academic organisation</li><li>Setting up academic processes</li></ul></div>
+        <div class="icard rv"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-mega"/></svg></span><h4>Marketing support</h4></div>
+          <ul class="ticks"><li>Local marketing and admission promotion</li><li>Reaching parents and building local awareness</li><li>Promotional planning and school positioning</li></ul></div>
+        <div class="icard rv" style="--d:.06s"><div class="icard-h"><span class="ic"><svg class="ico"><use href="#i-compass"/></svg></span><h4>School management guidance</h4></div>
+          <ul class="ticks"><li>How to run a preschool effectively</li><li>Admissions, parent communication and daily administration</li><li>Organising operations and building a sustainable education business</li></ul></div>
+      </div>
+
+      <div class="arrange rv">
+        <div><h4>What you arrange</h4><p class="sub">You arrange and finance all physical and operational requirements, including:</p></div>
+        <div>
+          <ul class="dots">
+            <li>Premises, interiors, furniture and benches</li>
+            <li>Play equipment, classroom materials, books, uniforms and stationery</li>
+            <li>Student starter kits and school supplies</li>
+            <li>Teachers, staff, recruitment and salaries</li>
+            <li>Prospectus, admission forms and printing, unless separately agreed</li>
+            <li>Local operating and launch costs</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panels" style="grid-template-columns:1fr">
+        <div class="panel warn rv"><h4><svg class="ico"><use href="#i-info"/></svg>Important</h4>
+          <p>Model 3 does not include student starter kits, swings, physical infrastructure or a complete school setup. Any additional products or services are charged separately, if offered.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="band compare-band" id="compare">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow rv">Side by side</p>
+      <h2 class="h2 rv" style="--d:.05s">Compare the three models</h2>
+    </div>
+    <div class="table-scroll rv" role="region" aria-label="Comparison of the three franchise models" tabindex="0">
+      <table>
+        <thead>
+          <tr>
+            <th class="feat" scope="col">Feature</th>
+            <th class="c1" scope="col"><small>Model 1</small>Complete Setup</th>
+            <th class="c2" scope="col"><small>Model 2</small>Standard Franchise</th>
+            <th class="c3" scope="col"><small>Model 3</small>Basic Franchise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Investment</th><td class="inv">₹12–17 lakh<br><span class="p" style="font-family:var(--f-body);font-size:var(--t-sm)">indicative</span></td><td class="inv">₹1,50,000</td><td class="inv">₹50,000</td></tr>
+          <tr><th scope="row">Brand / name rights</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Included</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Included</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Included</span></td></tr>
+          <tr><th scope="row">Royalty</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>No royalty</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>No royalty</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>No royalty</span></td></tr>
+          <tr><th scope="row">Complete infrastructure</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Included as per quotation</span></td><td><span class="p">Partner arranges</span></td><td><span class="p">Partner arranges</span></td></tr>
+          <tr><th scope="row">Student starter kits</th><td><span class="big">30</span></td><td><span class="big">10</span></td><td><span class="n"><svg class="ico"><use href="#i-minus"/></svg>Not included</span></td></tr>
+          <tr><th scope="row">Small swings</th><td><span class="big">6</span></td><td><span class="big">3</span></td><td><span class="n"><svg class="ico"><use href="#i-minus"/></svg>Not included</span></td></tr>
+          <tr><th scope="row">Academic support</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Comprehensive</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Included</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Guidance &amp; support</span></td></tr>
+          <tr><th scope="row">Hiring support</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Full hiring assistance</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Hiring guidance</span></td><td><span class="p">Partner arranges hiring</span></td></tr>
+          <tr><th scope="row">Marketing support</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Full marketing support</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Marketing guidance</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Marketing guidance</span></td></tr>
+          <tr><th scope="row">Training</th><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Comprehensive</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Included</span></td><td><span class="y"><svg class="ico"><use href="#i-check"/></svg>Operational guidance</span></td></tr>
+          <tr><th scope="row">Agreement</th><td>3 years, renew for ₹10,000</td><td>3 years, renew for ₹10,000</td><td>3 years, renew for ₹10,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-foot">Model 2 includes three years of franchise support and guidance. For Models 1 and 3, the support period is set out in the agreement.</p>
+  </div>
+</section>
+
+<!-- LIFE -->
+<section class="band life-band" id="life">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow rv">Life at Dream Spire</p>
+      <h2 class="h2 rv" style="--d:.05s">Every week has a reason to celebrate</h2>
+      <p class="lede rv" style="--d:.1s">Festivals, theme days, yoga and play. The calendar parents talk about, and the reason they recommend a school.</p>
+    </div>
+  </div>
+  <div class="marquee" aria-label="Photos of celebrations and activities">
+    <div class="mtrack">
+      <figure class="snap"><img src="assets/web/hello-summer.jpg" alt="A child on the Hello Summer stage" loading="lazy"><figcaption>Hello Summer</figcaption></figure>
+      <figure class="snap"><img src="assets/web/navratri.jpg" alt="Two children at a Navratri and Dussehra photo booth" loading="lazy"><figcaption>Navratri &amp; Dussehra</figcaption></figure>
+      <figure class="snap"><img src="assets/web/yoga-time.jpg" alt="Children doing yoga on the turf" loading="lazy"><figcaption>Yoga time</figcaption></figure>
+      <figure class="snap"><img src="assets/web/traditional-day.jpg" alt="Children in traditional dress sitting on stairs" loading="lazy"><figcaption>Traditional day</figcaption></figure>
+      <figure class="snap"><img src="assets/web/rainbow-day.jpg" alt="Children under a rainbow wall display" loading="lazy"><figcaption>Rainbow day</figcaption></figure>
+      <figure class="snap"><img src="assets/web/navratri-craft.jpg" alt="Children making Navratri craft" loading="lazy"><figcaption>Festival crafts</figcaption></figure>
+      <figure class="snap"><img src="assets/web/worksheets-2.jpg" alt="Children colouring worksheets" loading="lazy"><figcaption>Colouring corner</figcaption></figure>
+      <figure class="snap"><img src="assets/web/yoga-2.jpg" alt="Children stretching during a yoga session" loading="lazy"><figcaption>Stretch and breathe</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/hello-summer.jpg" alt="" loading="lazy"><figcaption>Hello Summer</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/navratri.jpg" alt="" loading="lazy"><figcaption>Navratri &amp; Dussehra</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/yoga-time.jpg" alt="" loading="lazy"><figcaption>Yoga time</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/traditional-day.jpg" alt="" loading="lazy"><figcaption>Traditional day</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/rainbow-day.jpg" alt="" loading="lazy"><figcaption>Rainbow day</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/navratri-craft.jpg" alt="" loading="lazy"><figcaption>Festival crafts</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/worksheets-2.jpg" alt="" loading="lazy"><figcaption>Colouring corner</figcaption></figure>
+      <figure class="snap" aria-hidden="true"><img src="assets/web/yoga-2.jpg" alt="" loading="lazy"><figcaption>Stretch and breathe</figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap" id="videos">
+    <div class="vhead">
+      <h3 class="rv">Watch it happen</h3>
+      <p class="rv" style="--d:.05s">Videos from Dream Spire schools. Tap any video to watch it with sound.</p>
+    </div>
+    <div class="vgrid">
+      <button type="button" class="vcard rv" id="vid-4" data-full="assets/video/v4.mp4" data-title="Red Day &amp; Poem Competition"><video muted loop playsinline preload="none" poster="assets/video/v4.jpg" data-src="assets/video/v4-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Red Day &amp; Poem Competition</b><i>2:16</i></span></button>
+      <button type="button" class="vcard rv" style="--d:.06s" id="vid-5" data-full="assets/video/v5.mp4" data-title="Swachh Bharat &amp; Dandi Yatra skit"><video muted loop playsinline preload="none" poster="assets/video/v5.jpg" data-src="assets/video/v5-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Swachh Bharat &amp; Dandi Yatra skit</b><i>1:52</i></span></button>
+      <button type="button" class="vcard rv" style="--d:.12s" id="vid-6" data-full="assets/video/v6.mp4" data-title="Action song on the turf"><video muted loop playsinline preload="none" poster="assets/video/v6.jpg" data-src="assets/video/v6-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Action song on the turf</b><i>0:21</i></span></button>
+      <button type="button" class="vcard rv" style="--d:.18s" id="vid-8" data-full="assets/video/v8.mp4" data-title="Indoor play zone"><video muted loop playsinline preload="none" poster="assets/video/v8.jpg" data-src="assets/video/v8-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Indoor play zone</b><i>1:49</i></span></button>
+      <button type="button" class="vcard rv" id="vid-7" data-full="assets/video/v7.mp4" data-title="Class time and play time"><video muted loop playsinline preload="none" poster="assets/video/v7.jpg" data-src="assets/video/v7-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Class time and play time</b><i>1:13</i></span></button>
+      <button type="button" class="vcard rv" style="--d:.06s" id="vid-1" data-full="assets/video/v1.mp4" data-title="Summer party in class"><video muted loop playsinline preload="none" poster="assets/video/v1.jpg" data-src="assets/video/v1-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Summer party in class</b><i>0:10</i></span></button>
+      <button type="button" class="vcard rv" style="--d:.12s" id="vid-3" data-full="assets/video/v3.mp4" data-title="Red Day"><video muted loop playsinline preload="none" poster="assets/video/v3.jpg" data-src="assets/video/v3-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Red Day</b><i>0:04</i></span></button>
+      <button type="button" class="vcard rv" style="--d:.18s" id="vid-2" data-full="assets/video/v2.mp4" data-title="Sunglasses on, summer is here"><video muted loop playsinline preload="none" poster="assets/video/v2.jpg" data-src="assets/video/v2-preview.mp4"></video><span class="vplay"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span><span class="vmeta"><b>Sunglasses on, summer is here</b><i>0:06</i></span></button>
+    </div>
+  </div>
+</section>
+
+<a class="wa-float" href="https://wa.me/919205294266?text=Hi%2C%20I%27m%20interested%20in%20the%20Dream%20Spire%20School%20franchise." target="_blank" rel="noopener" aria-label="Chat with Dream Spire School on WhatsApp"><svg class="ico"><use href="#i-chat"/></svg><span>Chat on WhatsApp</span></a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+  <div class="lb-inner">
+    <div class="lb-bar"><p id="lb-title">Video</p><button type="button" class="lb-btn" id="lb-close"><svg class="ico"><use href="#i-x"/></svg>Close</button></div>
+    <video id="lb-video" controls playsinline preload="metadata"></video>
+    <div class="lb-nav"><button type="button" class="lb-btn" id="lb-prev"><svg class="ico"><use href="#i-left"/></svg>Previous</button><button type="button" class="lb-btn" id="lb-next">Next<svg class="ico"><use href="#i-arrow"/></svg></button></div>
+  </div>
+</div>
+
+<!-- TERMS -->
+<section class="band" id="terms">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow rv">Commercial terms</p>
+      <h2 class="h2 rv" style="--d:.05s">Clear terms, no surprises</h2>
+      <p class="lede rv" style="--d:.1s">Every proposal and agreement spells out exactly what you pay for and what you receive.</p>
+    </div>
+    <div class="terms-grid">
+      <div class="term feature rv">
+        <span class="bigzero" aria-hidden="true">0</span>
+        <div class="sticker" aria-hidden="true"><div><span>Zero</span>royalty</div></div>
+        <p class="hand">Your fees, your growth</p>
+        <h3>No royalty</h3>
+        <p>No royalty is charged on any of the three models.</p>
+      </div>
+      <div class="term rv" style="--d:.06s"><span class="ic"><svg class="ico"><use href="#i-calendar"/></svg></span><p class="val">3 years</p><h3>Agreement term</h3><p>All three models run on a three-year agreement.</p></div>
+      <div class="term rv" style="--d:.12s"><span class="ic"><svg class="ico"><use href="#i-renew"/></svg></span><p class="val">₹10,000</p><h3>Renewal fee</h3><p>Renew after three years for ₹10,000.</p></div>
+      <div class="term rv" style="--d:.06s"><span class="ic"><svg class="ico"><use href="#i-box"/></svg></span><p class="val">₹4,000</p><h3>Per additional kit</h3><p>Extra student kits at ₹4,000 each, with the items in each kit listed in your agreement.</p></div>
+      <div class="term rv" style="--d:.12s"><span class="ic"><svg class="ico"><use href="#i-doc"/></svg></span><h3>Everything in writing</h3><p>Your proposal states whether the investment includes the franchise fee, taxes, transportation, installation and other charges. Model 1 deliverables are listed exactly, based on your premises and area.</p></div>
+    </div>
+    <p class="compare-foot">All investment figures are based on the proposed packages and are indicative until the final quotation and franchise agreement are issued.</p>
+  </div>
+</section>
+
+<!-- CHOOSE -->
+<section class="band choose-band" id="choose">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow rv">Which model is right for you?</p>
+      <h2 class="h2 rv" style="--d:.05s">Find your model in two questions</h2>
+    </div>
+    <div class="choose-grid">
+      <div class="finder rv" id="finder">
+        <div class="finder-top"><h3>Model finder</h3><div class="fdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div>
+
+        <div class="fstep" data-step="q1">
+          <p class="fq">Who should set up the school itself: classrooms, furniture, interiors and play area?</p>
+          <button type="button" class="opt" id="opt-q1-a" data-go="m1">Dream Spire sets it up for me <svg class="ico"><use href="#i-arrow"/></svg></button>
+          <button type="button" class="opt" id="opt-q1-b" data-go="q2">I'll arrange it myself <svg class="ico"><use href="#i-arrow"/></svg></button>
+        </div>
+
+        <div class="fstep" data-step="q2" hidden>
+          <p class="fq">What would you like from Dream Spire School?</p>
+          <button type="button" class="opt" id="opt-q2-a" data-go="m2">Brand, training, starter kits, swings and 3 years of support <svg class="ico"><use href="#i-arrow"/></svg></button>
+          <button type="button" class="opt" id="opt-q2-b" data-go="m3">Brand, academic guidance and marketing advice is enough <svg class="ico"><use href="#i-arrow"/></svg></button>
+          <button type="button" class="linkbtn" id="opt-q2-back" data-go="q1">Back</button>
+        </div>
+
+        <div class="fstep" data-step="m1" hidden>
+          <div class="result"><p class="rl">Your match</p><h4>Model 1: Complete School Setup</h4><p class="rp">₹12–17 Lakh <small style="font-family:var(--f-body);font-size:.55em;color:var(--muted)">indicative</small></p><p>For partners seeking a comprehensive, professionally coordinated school setup.</p>
+            <div class="result-actions"><a class="btn btn-primary btn-small" href="#model-1">See Model 1 <svg class="ico"><use href="#i-arrow"/></svg></a><button type="button" class="linkbtn" id="opt-r1-again" data-go="q1">Start over</button></div></div>
+        </div>
+        <div class="fstep" data-step="m2" hidden>
+          <div class="result r2"><p class="rl">Your match</p><h4>Model 2: Standard Franchise</h4><p class="rp">₹1,50,000</p><p>For partners who can arrange their own infrastructure and want branding, training, starter kits, play equipment and three years of support.</p>
+            <div class="result-actions"><a class="btn btn-primary btn-small" href="#model-2">See Model 2 <svg class="ico"><use href="#i-arrow"/></svg></a><button type="button" class="linkbtn" id="opt-r2-again" data-go="q1">Start over</button></div></div>
+        </div>
+        <div class="fstep" data-step="m3" hidden>
+          <div class="result r3"><p class="rl">Your match</p><h4>Model 3: Basic Branding &amp; Support</h4><p class="rp">₹50,000</p><p>For partners who can manage the physical setup independently and need branding, academic guidance, marketing support and advice on running the school.</p>
+            <div class="result-actions"><a class="btn btn-primary btn-small" href="#model-3">See Model 3 <svg class="ico"><use href="#i-arrow"/></svg></a><button type="button" class="linkbtn" id="opt-r3-again" data-go="q1">Start over</button></div></div>
+        </div>
+      </div>
+
+      <ul class="choose-list">
+        <li class="rv"><span class="mk">Model 1</span><p><b>Complete School Setup.</b> For partners seeking a comprehensive, professionally coordinated school setup.</p></li>
+        <li class="rv" style="--d:.08s"><span class="mk k2">Model 2</span><p><b>Standard Franchise.</b> For partners who can arrange their own infrastructure and want branding, training, starter kits, play equipment and three years of support.</p></li>
+        <li class="rv" style="--d:.16s"><span class="mk k3">Model 3</span><p><b>Basic Franchise.</b> For partners who can manage the physical setup independently and need branding, academic guidance, marketing support and advice on running the school.</p></li>
+      </ul>
+    </div>
+
+    <div class="path">
+      <h3 class="rv">Your path to opening day</h3>
+      <ol class="steps" style="list-style:none;padding:0;margin:0">
+        <li class="rv"><span class="sn">1</span><h4>Talk to our franchise team</h4><p>Call +91 95604 19145 or visit a campus in Palam.</p></li>
+        <li class="rv" style="--d:.08s"><span class="sn">2</span><h4>Choose your model</h4><p>Complete setup, standard franchise or basic branding.</p></li>
+        <li class="rv" style="--d:.16s"><span class="sn">3</span><h4>Quotation and agreement</h4><p>Every deliverable and term is put in writing.</p></li>
+        <li class="rv" style="--d:.24s"><span class="sn">4</span><h4>Setup, hiring and training</h4><p>Get your school, team and processes ready.</p></li>
+        <li class="rv" style="--d:.32s"><span class="sn">5</span><h4>Admissions and launch</h4><p>Run your admission campaign and open your doors.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow rv" style="color:var(--sun)">Start your journey</p>
+        <h2 class="rv" style="--d:.05s">Let's build your <span>school</span> together</h2>
+        <p class="lede rv" style="--d:.1s">Talk to the Dream Spire School franchise team about your location, your budget and the model that suits you best. Or come and see a running Dream Spire school in Palam, New Delhi.</p>
+        <p class="signoff rv" style="--d:.15s">Dream Spire School: your partner in building a brighter future for young learners.</p>
+        <div class="cta-row rv" style="--d:.2s"><a class="btn btn-sun" href="Dream-Spire-Franchise-Brochure.pdf" download>Download brochure (PDF) <svg class="ico"><use href="#i-download"/></svg></a><a class="btn btn-wa" href="https://wa.me/919205294266?text=Hi%2C%20I%27m%20interested%20in%20the%20Dream%20Spire%20School%20franchise." target="_blank" rel="noopener"><svg class="ico"><use href="#i-chat"/></svg>Chat on WhatsApp</a></div>
+      </div>
+      <div class="ccard rv" style="--d:.1s">
+        <img class="logo" src="assets/logo.png" alt="Dream Spire School logo" loading="lazy">
+        <h3>Franchise enquiries</h3>
+        <div class="citem"><span class="ic"><svg class="ico"><use href="#i-phone"/></svg></span><p><small>Phone</small><span><a href="tel:+919560419145">+91 95604 19145</a></span></p><button type="button" class="copy" id="copy-phone" data-copy="+91 95604 19145" aria-label="Copy phone number">Copy</button></div>
+        <div class="citem"><span class="ic"><svg class="ico"><use href="#i-chat"/></svg></span><p><small>WhatsApp</small><span><a href="https://wa.me/919205294266?text=Hi%2C%20I%27m%20interested%20in%20the%20Dream%20Spire%20School%20franchise." target="_blank" rel="noopener">+91 92052 94266</a></span></p><button type="button" class="copy" id="copy-wa" data-copy="+91 92052 94266" aria-label="Copy WhatsApp number">Copy</button></div>
+        <div class="citem"><span class="ic"><svg class="ico"><use href="#i-mail"/></svg></span><p><small>Email</small><span class="email"><a href="mailto:piyush.assessmentfootprint@gmail.com?subject=Dream%20Spire%20School%20franchise%20enquiry">piyush.<wbr>assessmentfootprint<wbr>@gmail.com</a></span></p><button type="button" class="copy" id="copy-email" data-copy="piyush.assessmentfootprint@gmail.com" aria-label="Copy email address">Copy</button></div>
+        <div class="citem"><span class="ic"><svg class="ico"><use href="#i-globe"/></svg></span><p><small>Website</small><a href="https://dreamspireschool.com/" target="_blank" rel="noopener">dreamspireschool.com</a></p></div>
+      </div>
+    </div>
+    <div class="campuses">
+      <h3 class="rv">Visit a running Dream Spire school</h3>
+      <p class="sub rv" style="--d:.05s">See the classrooms, meet the team and watch a school day in action.</p>
+      <div class="camp-grid">
+        <article class="camp rv">
+          <span class="camp-tag">DSS1</span>
+          <h4>Dream Spire School 1</h4>
+          <p class="camp-p">Principal: Mrs. Urvashi Naugai</p>
+          <p class="camp-a"><svg class="ico"><use href="#i-pin"/></svg>RZ-1-9, Raj Nagar Part-1, Palam Colony, New Delhi 110045</p>
+          <p class="camp-a"><svg class="ico"><use href="#i-phone"/></svg><a href="tel:+919205294266">+91 92052 94266</a></p>
+          <a class="btn btn-sun btn-small" href="https://www.google.com/maps/search/?api=1&amp;query=RZ-1-9%2C%20Raj%20Nagar%20Part-1%2C%20Palam%20Colony%2C%20New%20Delhi%20110045" target="_blank" rel="noopener">Open in Google Maps <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="camp rv" style="--d:.08s">
+          <span class="camp-tag">DSS2</span>
+          <h4>Dream Spire School 2<small>My Chhota School</small></h4>
+          <p class="camp-p">Principal: Mrs. Archna Mishra</p>
+          <p class="camp-a"><svg class="ico"><use href="#i-pin"/></svg>RZ-721, Old Mehrauli Road, near Deep Parmath School, Palam Colony, New Delhi 110045</p>
+          <p class="camp-a"><svg class="ico"><use href="#i-phone"/></svg><a href="tel:+919650968767">+91 96509 68767</a></p>
+          <a class="btn btn-sun btn-small" href="https://www.google.com/maps/search/?api=1&amp;query=RZ-721%2C%20Old%20Mehrauli%20Road%2C%20Palam%20Colony%2C%20New%20Delhi%20110045" target="_blank" rel="noopener">Open in Google Maps <svg class="ico"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+    <div class="foot">
+      <span>© Dream Spire School · Franchise Opportunities · dreamspireschool.com</span>
+      <span>Investment figures are indicative until the final quotation and franchise agreement are issued.</span>
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // reading progress
+  const bar = document.querySelector('.progress span');
+  const onScroll = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    bar.style.transform = `scaleX(${max > 0 ? Math.min(1, h.scrollTop / max) : 0})`;
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // count-up numbers (final value is already in the HTML)
+  const fmt = (v, el) => (el.dataset.prefix || '') + (el.dataset.format === 'inr' ? v.toLocaleString('en-IN') : v);
+  const countUp = el => {
+    const end = Number(el.dataset.count);
+    const t0 = performance.now(), dur = end > 1000 ? 1600 : 1100;
+    const step = t => {
+      const p = Math.min(1, (t - t0) / dur);
+      const e = 1 - Math.pow(1 - p, 3);
+      let v = Math.round(end * e);
+      if (end > 1000) v = Math.round(v / 1000) * 1000;
+      el.textContent = fmt(p < 1 ? v : end, el);
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  // reveal: content rests visible; animation plays the moment it first touches the viewport
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        io.unobserve(el);
+        if (el.dataset.count) countUp(el);
+        else el.classList.add('play');
+      }
+    }, { threshold: 0 });
+    document.querySelectorAll('.rv, .rv-pop, .rv-left, [data-count]').forEach(el => io.observe(el));
+  }
+
+  // active section in the top bar
+  const links = [...document.querySelectorAll('.navlinks a')];
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const groups = { 'model-1': 'models', 'model-2': 'models', 'model-3': 'models', approach: 'why', gallery: 'why', life: 'videos' };
+  if ('IntersectionObserver' in window) {
+    const spy = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const id = groups[e.target.id] || e.target.id;
+        links.forEach(a => a.classList.toggle('on', a === map.get(id)));
+      }
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('header[id], section[id], #videos').forEach(s => spy.observe(s));
+  }
+
+  // video previews: silent loops that play only while on screen
+  const cards = [...document.querySelectorAll('.vcard')];
+  if (!reduce && 'IntersectionObserver' in window) {
+    const vio = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        const v = e.target.querySelector('video');
+        if (e.isIntersecting) {
+          if (!v.getAttribute('src')) v.src = v.dataset.src;
+          const p = v.play(); if (p) p.catch(() => {});
+        } else v.pause();
+      }
+    }, { threshold: 0.35 });
+    cards.forEach(c => vio.observe(c));
+  }
+
+  // full video player
+  const lb = document.getElementById('lightbox');
+  const lbv = document.getElementById('lb-video');
+  const lbt = document.getElementById('lb-title');
+  const lbClose = document.getElementById('lb-close');
+  let cur = 0, opener = null;
+  const openAt = i => {
+    cur = (i + cards.length) % cards.length;
+    const c = cards[cur];
+    lbv.poster = c.querySelector('video').getAttribute('poster');
+    lbv.src = c.dataset.full;
+    lbt.textContent = c.dataset.title;
+    lb.hidden = false;
+    document.documentElement.style.overflow = 'hidden';
+    const p = lbv.play(); if (p) p.catch(() => {});
+  };
+  const closeLb = () => {
+    lbv.pause(); lbv.removeAttribute('src'); lbv.load();
+    lb.hidden = true;
+    document.documentElement.style.overflow = '';
+    if (opener) opener.focus({ preventScroll: true });
+  };
+  cards.forEach((c, i) => c.addEventListener('click', () => { opener = c; openAt(i); lbClose.focus({ preventScroll: true }); }));
+  lbClose.addEventListener('click', closeLb);
+  document.getElementById('lb-prev').addEventListener('click', () => openAt(cur - 1));
+  document.getElementById('lb-next').addEventListener('click', () => openAt(cur + 1));
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') closeLb();
+    else if (e.key === 'ArrowRight') openAt(cur + 1);
+    else if (e.key === 'ArrowLeft') openAt(cur - 1);
+  });
+
+  // learning wheel: show the hovered or tapped intelligence in the hub
+  const hub1 = document.getElementById('hub-t1'), hub2 = document.getElementById('hub-t2');
+  const segs = [...document.querySelectorAll('.seg')];
+  const showSeg = s => {
+    segs.forEach(x => x.classList.toggle('on', x === s));
+    hub1.textContent = s ? s.dataset.plain : 'DSS';
+    hub2.textContent = s ? s.dataset.name : 'Learning Wheel';
+  };
+  segs.forEach(s => {
+    s.addEventListener('mouseenter', () => showSeg(s));
+    s.addEventListener('focus', () => showSeg(s));
+    s.addEventListener('click', () => showSeg(s));
+    s.addEventListener('mouseleave', () => showSeg(null));
+    s.addEventListener('blur', () => showSeg(null));
+  });
+
+  // copy buttons for contact details
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    const label = 'Copy';
+    const done = text => { b.textContent = text; setTimeout(() => { b.textContent = label; }, 1600); };
+    const selectIt = () => {
+      const t = b.parentElement.querySelector('p span');
+      const r = document.createRange(); r.selectNodeContents(t);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      done('Selected');
+    };
+    try { navigator.clipboard.writeText(b.dataset.copy).then(() => done('Copied'), selectIt); }
+    catch (e) { selectIt(); }
+  }));
+
+  // model finder
+  const finder = document.getElementById('finder');
+  const steps = [...finder.querySelectorAll('.fstep')];
+  const dots = [...finder.querySelectorAll('.fdots i')];
+  const level = { q1: 0, q2: 1, m1: 2, m2: 2, m3: 2 };
+  finder.addEventListener('click', ev => {
+    const btn = ev.target.closest('[data-go]');
+    if (!btn) return;
+    const go = btn.dataset.go;
+    steps.forEach(s => {
+      const show = s.dataset.step === go;
+      s.hidden = !show;
+      if (show && !reduce) { s.classList.remove('enter'); void s.offsetWidth; s.classList.add('enter'); }
+    });
+    dots.forEach((d, i) => d.classList.toggle('on', i <= level[go]));
+    const first = finder.querySelector(`.fstep[data-step="${go}"] button, .fstep[data-step="${go}"] a`);
+    if (first) first.focus({ preventScroll: true });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Netlify: static site, no build step. Publish this folder as-is.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    Content-Disposition = "attachment"
